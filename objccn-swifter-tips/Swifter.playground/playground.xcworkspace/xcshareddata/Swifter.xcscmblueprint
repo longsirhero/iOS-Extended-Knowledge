@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7502F96F5C4E53E5E4D8F6D0CE6682F7FD5510AE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7502F96F5C4E53E5E4D8F6D0CE6682F7FD5510AE" : 0,
+    "C06821B1F3517FF3FE504C9E5AB8525DE79DEFEF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "73A4433D-12C5-4FD5-982D-850CC97BED98",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7502F96F5C4E53E5E4D8F6D0CE6682F7FD5510AE" : "playground\/",
+    "C06821B1F3517FF3FE504C9E5AB8525DE79DEFEF" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Swifter",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Swifter.playground",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:swifter-tips\/Playground.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7502F96F5C4E53E5E4D8F6D0CE6682F7FD5510AE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.com:onevcat\/swifter.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C06821B1F3517FF3FE504C9E5AB8525DE79DEFEF"
+    }
+  ]
+}
