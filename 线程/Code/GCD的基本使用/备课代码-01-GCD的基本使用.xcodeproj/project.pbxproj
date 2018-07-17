@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52A404D11A60FFE400FEA661 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A404D01A60FFE400FEA661 /* main.m */; };
+		52A404D41A60FFE400FEA661 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A404D31A60FFE400FEA661 /* AppDelegate.m */; };
+		52A404D71A60FFE400FEA661 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A404D61A60FFE400FEA661 /* ViewController.m */; };
+		52A404DA1A60FFE400FEA661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A404D81A60FFE400FEA661 /* Main.storyboard */; };
+		52A404DC1A60FFE400FEA661 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A404DB1A60FFE400FEA661 /* Images.xcassets */; };
+		52A404DF1A60FFE400FEA661 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A404DD1A60FFE400FEA661 /* LaunchScreen.xib */; };
+		52A404EB1A60FFE400FEA661 /* _____01_GCD_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A404EA1A60FFE400FEA661 /* _____01_GCD_____Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52A404E51A60FFE400FEA661 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52A404C31A60FFE400FEA661 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52A404CA1A60FFE400FEA661;
+			remoteInfo = "备课代码-01-GCD的基本使用";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52A404CB1A60FFE400FEA661 /* 备课代码-01-GCD的基本使用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "备课代码-01-GCD的基本使用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A404CF1A60FFE400FEA661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A404D01A60FFE400FEA661 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52A404D21A60FFE400FEA661 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		52A404D31A60FFE400FEA661 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		52A404D51A60FFE400FEA661 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		52A404D61A60FFE400FEA661 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		52A404D91A60FFE400FEA661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52A404DB1A60FFE400FEA661 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		52A404DE1A60FFE400FEA661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		52A404E41A60FFE400FEA661 /* 备课代码-01-GCD的基本使用Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "备课代码-01-GCD的基本使用Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A404E91A60FFE400FEA661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A404EA1A60FFE400FEA661 /* _____01_GCD_____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____01_GCD_____Tests.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52A404C81A60FFE400FEA661 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A404E11A60FFE400FEA661 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52A404C21A60FFE400FEA661 = {
+			isa = PBXGroup;
+			children = (
+				52A404CD1A60FFE400FEA661 /* 备课代码-01-GCD的基本使用 */,
+				52A404E71A60FFE400FEA661 /* 备课代码-01-GCD的基本使用Tests */,
+				52A404CC1A60FFE400FEA661 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52A404CC1A60FFE400FEA661 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52A404CB1A60FFE400FEA661 /* 备课代码-01-GCD的基本使用.app */,
+				52A404E41A60FFE400FEA661 /* 备课代码-01-GCD的基本使用Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52A404CD1A60FFE400FEA661 /* 备课代码-01-GCD的基本使用 */ = {
+			isa = PBXGroup;
+			children = (
+				52A404D21A60FFE400FEA661 /* AppDelegate.h */,
+				52A404D31A60FFE400FEA661 /* AppDelegate.m */,
+				52A404D51A60FFE400FEA661 /* ViewController.h */,
+				52A404D61A60FFE400FEA661 /* ViewController.m */,
+				52A404D81A60FFE400FEA661 /* Main.storyboard */,
+				52A404DB1A60FFE400FEA661 /* Images.xcassets */,
+				52A404DD1A60FFE400FEA661 /* LaunchScreen.xib */,
+				52A404CE1A60FFE400FEA661 /* Supporting Files */,
+			);
+			path = "备课代码-01-GCD的基本使用";
+			sourceTree = "<group>";
+		};
+		52A404CE1A60FFE400FEA661 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52A404CF1A60FFE400FEA661 /* Info.plist */,
+				52A404D01A60FFE400FEA661 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52A404E71A60FFE400FEA661 /* 备课代码-01-GCD的基本使用Tests */ = {
+			isa = PBXGroup;
+			children = (
+				52A404EA1A60FFE400FEA661 /* _____01_GCD_____Tests.m */,
+				52A404E81A60FFE400FEA661 /* Supporting Files */,
+			);
+			path = "备课代码-01-GCD的基本使用Tests";
+			sourceTree = "<group>";
+		};
+		52A404E81A60FFE400FEA661 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52A404E91A60FFE400FEA661 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52A404CA1A60FFE400FEA661 /* 备课代码-01-GCD的基本使用 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52A404EE1A60FFE400FEA661 /* Build configuration list for PBXNativeTarget "备课代码-01-GCD的基本使用" */;
+			buildPhases = (
+				52A404C71A60FFE400FEA661 /* Sources */,
+				52A404C81A60FFE400FEA661 /* Frameworks */,
+				52A404C91A60FFE400FEA661 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "备课代码-01-GCD的基本使用";
+			productName = "备课代码-01-GCD的基本使用";
+			productReference = 52A404CB1A60FFE400FEA661 /* 备课代码-01-GCD的基本使用.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52A404E31A60FFE400FEA661 /* 备课代码-01-GCD的基本使用Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52A404F11A60FFE400FEA661 /* Build configuration list for PBXNativeTarget "备课代码-01-GCD的基本使用Tests" */;
+			buildPhases = (
+				52A404E01A60FFE400FEA661 /* Sources */,
+				52A404E11A60FFE400FEA661 /* Frameworks */,
+				52A404E21A60FFE400FEA661 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52A404E61A60FFE400FEA661 /* PBXTargetDependency */,
+			);
+			name = "备课代码-01-GCD的基本使用Tests";
+			productName = "备课代码-01-GCD的基本使用Tests";
+			productReference = 52A404E41A60FFE400FEA661 /* 备课代码-01-GCD的基本使用Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52A404C31A60FFE400FEA661 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = itheima;
+				TargetAttributes = {
+					52A404CA1A60FFE400FEA661 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					52A404E31A60FFE400FEA661 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 52A404CA1A60FFE400FEA661;
+					};
+				};
+			};
+			buildConfigurationList = 52A404C61A60FFE400FEA661 /* Build configuration list for PBXProject "备课代码-01-GCD的基本使用" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52A404C21A60FFE400FEA661;
+			productRefGroup = 52A404CC1A60FFE400FEA661 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52A404CA1A60FFE400FEA661 /* 备课代码-01-GCD的基本使用 */,
+				52A404E31A60FFE400FEA661 /* 备课代码-01-GCD的基本使用Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52A404C91A60FFE400FEA661 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A404DA1A60FFE400FEA661 /* Main.storyboard in Resources */,
+				52A404DF1A60FFE400FEA661 /* LaunchScreen.xib in Resources */,
+				52A404DC1A60FFE400FEA661 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A404E21A60FFE400FEA661 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52A404C71A60FFE400FEA661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A404D71A60FFE400FEA661 /* ViewController.m in Sources */,
+				52A404D41A60FFE400FEA661 /* AppDelegate.m in Sources */,
+				52A404D11A60FFE400FEA661 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A404E01A60FFE400FEA661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A404EB1A60FFE400FEA661 /* _____01_GCD_____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52A404E61A60FFE400FEA661 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52A404CA1A60FFE400FEA661 /* 备课代码-01-GCD的基本使用 */;
+			targetProxy = 52A404E51A60FFE400FEA661 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52A404D81A60FFE400FEA661 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52A404D91A60FFE400FEA661 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52A404DD1A60FFE400FEA661 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52A404DE1A60FFE400FEA661 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52A404EC1A60FFE400FEA661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52A404ED1A60FFE400FEA661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52A404EF1A60FFE400FEA661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "备课代码-01-GCD的基本使用/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52A404F01A60FFE400FEA661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "备课代码-01-GCD的基本使用/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		52A404F21A60FFE400FEA661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "备课代码-01-GCD的基本使用Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/备课代码-01-GCD的基本使用.app/备课代码-01-GCD的基本使用";
+			};
+			name = Debug;
+		};
+		52A404F31A60FFE400FEA661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "备课代码-01-GCD的基本使用Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/备课代码-01-GCD的基本使用.app/备课代码-01-GCD的基本使用";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52A404C61A60FFE400FEA661 /* Build configuration list for PBXProject "备课代码-01-GCD的基本使用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A404EC1A60FFE400FEA661 /* Debug */,
+				52A404ED1A60FFE400FEA661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52A404EE1A60FFE400FEA661 /* Build configuration list for PBXNativeTarget "备课代码-01-GCD的基本使用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A404EF1A60FFE400FEA661 /* Debug */,
+				52A404F01A60FFE400FEA661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52A404F11A60FFE400FEA661 /* Build configuration list for PBXNativeTarget "备课代码-01-GCD的基本使用Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A404F21A60FFE400FEA661 /* Debug */,
+				52A404F31A60FFE400FEA661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52A404C31A60FFE400FEA661 /* Project object */;
+}
