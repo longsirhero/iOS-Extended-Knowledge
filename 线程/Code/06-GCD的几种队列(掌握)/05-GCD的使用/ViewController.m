@@ -51,7 +51,60 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    [self gcdTest8];
+    [self gcdTest9];
+}
+
+#pragma mark - GCD信号量：
+
+/**
+ 需求： 先执行A任务，再执行B任务，先执行C任务，再执行D任务，B任务执行永远在A之后，D任务永远在后面，当A,B,C,D任务都执行完成后，再执行E操作
+ */
+- (void)gcdTest9 {
+    // 创建一个信号量
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    // 创建一个线程组
+    dispatch_group_t group = dispatch_group_create();
+    // 创建一个线程队列
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    dispatch_group_async(group, queue, ^{
+        // 异步串行 A -> B
+        dispatch_queue_t queue1 = dispatch_queue_create(nil, DISPATCH_QUEUE_SERIAL);
+        dispatch_async(queue1, ^{
+            NSLog(@"执行A操作");
+        });
+        dispatch_async(queue1, ^{
+            NSLog(@"执行B操作");
+            sleep(1);
+            dispatch_semaphore_signal(semaphore);
+        });
+    });
+    
+    dispatch_group_async(group, queue, ^{
+        // 异步串行  C -> D
+        dispatch_queue_t queue2 = dispatch_queue_create(nil, DISPATCH_QUEUE_SERIAL);
+        dispatch_async(queue2, ^{
+            NSLog(@"执行C操作");
+        });
+        dispatch_async(queue2, ^{
+            NSLog(@"执行D操作");
+            sleep(1);
+            dispatch_semaphore_signal(semaphore);
+        });
+    });
+    
+    dispatch_group_notify(group, queue, ^{
+        // 俩次信号等待
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        // 开始执行第三个线程
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            NSLog(@"执行E操作");
+            sleep(2);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                NSLog(@"回到主线程刷新UI");
+            });
+        });
+    });
 }
 
 /**
@@ -60,7 +113,7 @@
  2. 全局队列，是供所有的应用程序共享。
  3. 在MRC开发，并发队列，创建完了，需要释放。 全局队列不需要我们管理
  */
-#pragma CGD - 全局队列
+#pragma mark - CGD - 全局队列
 - (void)gcdTest8
 {
     // 获得全局队列
@@ -88,7 +141,7 @@
     
 }
 
-#pragma GCD- 同步任务的作用
+#pragma mark - GCD- 同步任务的作用
 - (void)gcdTest7
 {
     // 并发队列
@@ -118,7 +171,7 @@
 }
 
 
-#pragma GCD-主队列
+#pragma mark - GCD-主队列
 /**
   主队列：专门负责在主线程上调度任务，不会在子线程调度任务，在主队列不允许开新线程.
   同步执行：要马上执行
@@ -170,7 +223,7 @@
     NSLog(@"完成----");
 }
 
-#pragma GCDG演练
+#pragma mark - GCDG演练
 /**
   并发队列：可以同时执行多个任务
   同步任务：不会开辟新线程，是在当前线程执行
