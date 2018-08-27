@@ -51,7 +51,43 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    [self dependecy];
+//    [self dependecy];
+    [self opDemo7];
+}
+
+
+/**
+ 需求： A操作完成后，再执行B操作，C操作完成后，再执行D操作，当所有操作完成后，再执行E操作，刷新UI
+ */
+- (void)opDemo7 {
+    
+    NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"执行A操作");
+    }];
+    
+    NSBlockOperation *op2 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"执行B操作");
+    }];
+    
+    NSBlockOperation *op3 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"执行C操作");
+    }];
+    
+    NSBlockOperation *op4 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"执行D操作");
+    }];
+    
+    // 添加依赖关系
+    [op2 addDependency:op1];
+    [op4 addDependency:op3];
+    
+    // 把操作添加到队列中，等待完成所有操作后，再执行E操作，刷新界面
+    [self.opQueue addOperations:@[op1, op2, op3, op4] waitUntilFinished:YES];
+    
+    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+        NSLog(@"执行E操作，刷新UI");
+    }];
+    
 }
 
 #pragma mark - 高级操作
