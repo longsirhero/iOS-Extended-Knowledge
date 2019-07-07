@@ -1,0 +1,236 @@
+[
+  {
+    "number": 1,
+    "title": "Storm Viewer",
+    "subtitle": "Get started coding in Swift by making an image viewer app and learning key concepts.",
+    "topics": "Constants and variables, UITableView, UIImageView, FileManager, storyboards"
+  },
+  {
+    "number": 2,
+    "title": "Guess the Flag",
+    "subtitle": "Make a game using UIKit, and learn about integers, buttons, colors and actions.",
+    "topics": "Asset catalogs, UIButton, CALayer, UIColor, UIAlertController"
+  },
+  {
+    "number": 3,
+    "title": "Social Media",
+    "subtitle": "Let users share to Facebook and Twitter by modifying project 1.",
+    "topics": "UIBarButtonItem, UIActivityViewController, URL"
+  },
+  {
+    "number": 4,
+    "title": "Easy Browser",
+    "subtitle": "Embed Web Kit and learn about delegation, KVO, classes and UIToolbar.",
+    "topics": "loadView(), WKWebView, URLRequest, UIToolbar, UIProgressView, key-value observing"
+  },
+  {
+    "number": 5,
+    "title": "Word Scramble",
+    "subtitle": "Create an anagram game while learning about closures and booleans.",
+    "topics": "Closures, method return values, booleans, NSRange"
+  },
+  {
+    "number": 6,
+    "title": "Auto Layout",
+    "subtitle": "Get to grips with Auto Layout using practical examples and code.",
+    "topics": "NSLayoutConstraint, Visual Format Language, layout anchors"
+  },
+  {
+    "number": 7,
+    "title": "Whitehouse Petitions",
+    "subtitle": "Make an app to parse Whitehouse petitions using JSON and a tab bar.",
+    "topics": "JSON, Data, UITabBarController"
+  },
+  {
+    "number": 8,
+    "title": "7 Swifty Words",
+    "subtitle": "Build a word-guessing game and master strings once and for all.",
+    "topics": ">addTarget(), enumerated(), count(), index(of:), joined(), property observers, range operators"
+  },
+  {
+    "number": 9,
+    "title": "Grand Central Dispatch",
+    "subtitle": "Learn how to run complex tasks in the background with GCD.",
+    "topics": "DispatchQueue, perform(inBackground:)"
+  },
+  {
+    "number": 10,
+    "title": "Names to Faces",
+    "subtitle": "Get started with UICollectionView and the photo library.",
+    "topics": "UICollectionView, UIImagePickerController, UUID, classes"
+  },
+  {
+    "number": 11,
+    "title": "Pachinko",
+    "subtitle": "Dive into SpriteKit to try your hand at fast 2D games.",
+    "topics": "SpriteKit, physics, blend modes, radians, CGFloat, NSKeyedUnarchiver"
+  },
+  {
+    "number": 12,
+    "title": "UserDefaults",
+    "subtitle": "Learn how to save user settings and data for later use.",
+    "topics": "UserDefaults, NSCoding, Codable, NSKeyedArchiver"
+  },
+  {
+    "number": 13,
+    "title": "Instafilter",
+    "subtitle": "Make a photo manipulation program using Core Image filters and a UISlider.",
+    "topics": "Core Image, UISlider, writing to the photo library"
+  },
+  {
+    "number": 14,
+    "title": "Whack-a-Penguin",
+    "subtitle": "Build a game using SKCropNode and a sprinkling of Grand Central Dispatch.",
+    "topics": "SKCropNode, SKTexture, asyncAfter()"
+  },
+  {
+    "number": 15,
+    "title": "Animation",
+    "subtitle": "Bring your interfaces to life with animation, and meet switch/case at the same time.",
+    "topics": "Core Animation, CGAffineTransform"
+  },
+  {
+    "number": 16,
+    "title": "JavaScript Injection",
+    "subtitle": "Extend Safari with a cool feature for JavaScript developers.",
+    "topics": "Safari extensions, UITextView, NotificationCenter"
+  },
+  {
+    "number": 17,
+    "title": "Swifty Ninja",
+    "subtitle": "Learn to draw shapes in SpriteKit while making a fun and tense slicing game.",
+    "topics": "SKShapeNode, AVAudioPlayer, UIBezierPath, custom enums"
+  },
+  {
+    "number": 18,
+    "title": "Debugging",
+    "subtitle": "Everyone hits problems sooner or later, so learning to find and fix them is an important skill.",
+    "topics": "print(), assert(), breakpoints, and view debugging"
+  },
+  {
+    "number": 19,
+    "title": "Capital Cities",
+    "subtitle": "Teach users about geography while you learn about MKMapView and annotations.",
+    "topics": "MKMapView, MKAnnotation, MKPinAnnotationView, CLLocationCoordinate2D"
+  },
+  {
+    "number": 20,
+    "title": "Fireworks Night",
+    "subtitle": "Learn about timers and color blends while making things go bang!",
+    "topics": "Timer, follow(path:), sprite color blending, shake gestures"
+  },
+  {
+    "number": 21,
+    "title": "Local Notifications",
+    "subtitle": "Send reminders, prompts and alerts even when your app isn't running.",
+    "topics": "UNUserNotificationCenter, UNNotificationRequest, UNMutableNotificationContent, UNCalendarNotificationTrigger, and UNTimeIntervalNotificationTrigger"
+  },
+  {
+    "number": 22,
+    "title": "Detect-a-Beacon",
+    "subtitle": "Learn to find and range iBeacons using our first project for a physical device.",
+    "topics": "CLLocationManager, CLBeaconRegion, CLProximity"
+  },
+  {
+    "number": 23,
+    "title": "Space Race",
+    "subtitle": "Dodge space debris while you learn about per-pixel collision detection.",
+    "topics": "Per-pixel collision detection, advancing particle systems, linear and angular damping"
+  },
+  {
+    "number": 24,
+    "title": "Swift Extensions",
+    "subtitle": "Try your hand at improving the built-in data types of Swift.",
+    "topics": "Language extensions, Swift playgrounds"
+  },
+  {
+    "number": 25,
+    "title": "Selfie Share",
+    "subtitle": "Make a multipeer photo sharing app in just 150 lines of code.",
+    "topics": "Multipeer Connectivity Framework"
+  },
+  {
+    "number": 26,
+    "title": "Marble Maze",
+    "subtitle": "Respond to device tilting by steering a ball around a vortex maze.",
+    "topics": "Core Motion, collision bitmasks, array reversing, compiler directives"
+  },
+  {
+    "number": 27,
+    "title": "Core Graphics",
+    "subtitle": "Draw 2D shapes using Apple's high-speed drawing framework.",
+    "topics": "UIGraphicsImageRenderer"
+  },
+  {
+    "number": 28,
+    "title": "Secret Swift",
+    "subtitle": "Save user data securely using the device keychain and Touch ID.",
+    "topics": "Touch ID and Face ID, device keychain"
+  },
+  {
+    "number": 29,
+    "title": "Exploding Monkeys",
+    "subtitle": "Remake a classic DOS game and learn about destructible terrain and scene transitions.",
+    "topics": "Mixing UIKit and SpriteKit, texture atlases, scene transitions, destructible terrain"
+  },
+  {
+    "number": 30,
+    "title": "Instruments",
+    "subtitle": "Become a bug detective and track down lost memory, slow drawing and more.",
+    "topics": "Profiling, shadows, image caching"
+  },
+  {
+    "number": 31,
+    "title": "Multibrowser",
+    "subtitle": "Get started with UIStackView and see just how easy iPad multitasking is.",
+    "topics": "IStackView, multitasking for iPad, size classes"
+  },
+  {
+    "number": 32,
+    "title": "SwiftSearcher",
+    "subtitle": "Add your app's content to iOS Spotlight and take advantage of Safari integration.",
+    "topics": "Core Spotlight, SFSafariViewController, NSAttributedString, Dynamic Type, automatic UITableViewCell sizing"
+  },
+  {
+    "number": 33,
+    "title": "What's that Whistle?",
+    "subtitle": "Build a crowd-sourced song recognition app using Apple's free platform as a service: CloudKit.",
+    "topics": "CloudKit, CKRecord, CKQuery, CKQuerySubscription, AVAudioRecorder, and push messages"
+  },
+  {
+    "number": 34,
+    "title": "Four in a Row",
+    "subtitle": "Let iOS take over the AI in your games using GameplayKit AI.",
+    "topics": "GameplayKit, GKMinmaxStrategist, GKGameModel, UIStackView, map()"
+  },
+  {
+    "number": 35,
+    "title": "Random Numbers",
+    "subtitle": "Let GameplayKit help you generate random numbers in ways you soon won't be able to live without.",
+    "topics": "GameplayKit, GKRandomSource, GKARC4RandomSource, GKRandomDistribution, GKShuffledDistribution, GKGaussianDistribution"
+  },
+  {
+    "number": 36,
+    "title": "Crashy Plane",
+    "subtitle": "Ever wanted to make a Flappy Bird clone? Now you can do it in under an hour thanks to SpriteKit.",
+    "topics": "SKAudioNode, GameplayKit randomization, and the guard keyword"
+  },
+  {
+    "number": 37,
+    "title": "Psychic Tester",
+    "subtitle": "Are you psychic? Of course not. But what if we could use our coding skills to make a game to fool your friends into thinking otherwise?",
+    "topics": "CAEmitterLayer, CAGradientLayer, IBDesignable, transition(with:), 3D Touch, WatchKit"
+  },
+  {
+    "number": 38,
+    "title": "GitHub Commits",
+    "subtitle": "Get started with Core Data by building an app to fetch and store GitHub commits for Swift.",
+    "topics": "Core Data, NSPersistentContainer, NSFetchRequest, NSSortDescriptor, NSFetchedResultsController, DateFormatter"
+  },
+  {
+    "number": 39,
+    "title": "Unit testing with XCTest",
+    "subtitle": "Learn how to write unit tests and user interface tests using Xcode's built-in testing framework.",
+    "topics": "XCTest, measure(), filter(), sort(), NSCountedSet"
+  }
+]
