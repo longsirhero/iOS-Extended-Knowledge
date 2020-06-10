@@ -1,0 +1,60 @@
+{
+    "title": "String interpolation",
+    "postscript": "",
+    "reviewType": "multipleSelection",
+    "question": "Which of these lines use string interpolation?",
+    "hint": "String interpolation starts with a backslash, then contains a value inside parentheses.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "var greeting = \"Hello, \\(name)!\"",
+            "reason": "This uses string interpolation to create a string variable called <code>greeting<\/code>."
+        },
+        {
+            "answer": "var warning = \"You need to be \\(years) or older\"",
+            "reason": "This uses string interpolation to create a string variable called <code>warning<\/code>."
+        },
+        {
+            "answer": "var alert = \"Error: \\(message)!\"",
+            "reason": "This uses string interpolation to create a string variable called <code>alert<\/code>."
+        },
+        {
+            "answer": "var name = \"\\(firstName) \\(lastName)\"",
+            "reason": "This uses string interpolation to create a string variable called <code>name<\/code>."
+        },
+        {
+            "answer": "var result = \"\\(daysRemaining) days to go\"",
+            "reason": "This uses string interpolation to create a string variable called <code>result<\/code>."
+        },
+        {
+            "answer": "var forecast = \"Today's weather will be \\(weather)\"",
+            "reason": "This uses string interpolation to create a string variable called <code>forecast<\/code>."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "var error = \"Error, please try again.\"",
+            "reason": "This is just a plain string."
+        },
+        {
+            "answer": "var str = \"Hello, playground!\"",
+            "reason": "This is just a plain string."
+        },
+        {
+            "answer": "var message = \"Installation failed: \\{reason}.\"",
+            "reason": "String interpolation is written as <code>\\(reason)<\/code>."
+        },
+        {
+            "answer": "var versionString = \"You're using v(version)\"",
+            "reason": "String interpolation is written as <code>\\(reason)<\/code>."
+        },
+        {
+            "answer": "var engine = \"Your engine is (size)cc\"",
+            "reason": "String interpolation is written as <code>\\(reason)<\/code>."
+        },
+        {
+            "answer": "var formattedHeight = \"You are (size)cm\"",
+            "reason": "String interpolation is written as <code>\\(reason)<\/code>."
+        }
+    ]
+}

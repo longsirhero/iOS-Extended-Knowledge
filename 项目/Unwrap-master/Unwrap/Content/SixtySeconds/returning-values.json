@@ -1,0 +1,60 @@
+{
+    "title": "Returning values",
+    "postscript": "",
+    "reviewType": "singleSelection",
+    "question": "This code is valid Swift \u2013 true or false?",
+    "hint": "Make sure the function name and return type are both correct.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "func read(books: [String]) -> Bool {\n\tfor book in books {\n\t\tprint(\"I'm reading \\(book)\")\n\t}\n\treturn true\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func isEveryoneAdult(ages: [Int]) -> Bool {\n\tfor age in ages {\n\t\tif age < 18 {\n\t\t\treturn false\n\t\t}\n\t}\n\treturn true\n}\nisEveryoneAdult(ages: [10, 20, 16, 24])",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func format(number: Int) -> String {\n\treturn \"The number is \\(number)\"\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func countMultiplesOf10(numbers: [Int]) -> Int {\n\tvar result = 0\n\tfor number in numbers {\n\t\tif number % 10 == 0 {\n\t\t\tresult += 1\n\t\t}\n\t}\n\treturn result\n}\ncountMultiplesOf10(numbers: [5, 10, 15, 20, 25])",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func writeToLog(message: String) -> Bool {\n\tif message != \"\" {\n\t\tprint(\"Log: \\(message)\")\n\t\treturn true\n\t} else {\n\t\treturn false\n\t}\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func allTestsPassed(tests: [Bool]) -> Bool {\n\tfor test in tests {\n\t\tif test == false {\n\t\t\treturn false\n\t\t}\n\t}\n\treturn true\n}",
+            "reason": "This code is valid Swift."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "func burnCandles(count: Int) -> Int {\n\tfor _ in 1...count {\n\t\tprint(\"I'm lighting a candle\")\n\t}\n\treturn true\n}",
+            "reason": "This attempts to return a Boolean when it should return an integer."
+        },
+        {
+            "answer": "func check(scores: [Int]) {\n\tfor score in scores {\n\t\tif score < 80 {\n\t\t\treturn false\n\t\t}\n\t}\n\treturn true\n}\ncheck(scores: [100, 90, 100, 85])",
+            "reason": "This returns a value from a function that should not return anything."
+        },
+        {
+            "answer": "func playPiano(song: String) -> String {\n\tretrurn \"I'm going to play \\(song) on my piano.\"\n}",
+            "reason": "This has a typo – it should read <code>return<\/code> rather than <code>retrurn<\/code>."
+        },
+        {
+            "answer": "func estimateCost(units: Int) -> Int {\n\tswitch units {\n\tcase 0...10:\n\t\treturn \"\\(units * 10)\"\n\tcase 11...50:\n\t\treturn \"\\(units * 9)\"\n\tcase 51...100:\n\t\treturn \"\\(units * 8)\"\n\tdefault:\n\t\treturn \"We can't make that many.\"\n\t}\n}",
+            "reason": "This attempts to return strings when it should return an integer."
+        },
+        {
+            "answer": "func paintHouse(color: String) -> Bool {\n\tif color == \"tartan\" {\n\t\treturn false\n\t}\n}",
+            "reason": "This does not return a value if <code>color<\/code> is not \"tartan\"."
+        },
+        {
+            "answer": "func giveDog(food: String) -> String {\n\tif food == \"treat\" {\n\t\t\"The dog ate it\"\n\t} else {\n\t\t\"The dog stared in disgust\"\n\t}\n}",
+            "reason": "This function should return a string, but doesn't return anything."
+        }
+    ]
+}

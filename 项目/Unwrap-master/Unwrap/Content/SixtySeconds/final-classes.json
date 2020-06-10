@@ -1,0 +1,60 @@
+{
+    "title": "Final classes",
+    "postscript": "",
+    "reviewType": "singleSelection",
+    "question": "This code defines two valid classes using inheritance \u2013 true or false?",
+    "hint": "Classes can inherit only from non-final classes.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "class Game { }\nfinal class BoardGame: Game { }",
+            "reason": "This creates one class and another that inherits from it."
+        },
+        {
+            "answer": "class Magazine { }\nfinal class FashionMagazine: Magazine { }",
+            "reason": "This creates one class and another that inherits from it."
+        },
+        {
+            "answer": "class Shoes { }\nfinal class KittenHeels: Shoes { }",
+            "reason": "This creates one class and another that inherits from it."
+        },
+        {
+            "answer": "class Furniture { }\nclass Couch: Furniture { }",
+            "reason": "This creates one class and another that inherits from it."
+        },
+        {
+            "answer": "class Player { }\nclass Barbarian: Player { }",
+            "reason": "This creates one class and another that inherits from it."
+        },
+        {
+            "answer": "class Hat { }\nclass Fez: Hat { }",
+            "reason": "This creates one class and another that inherits from it."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "class Pen { }\nclass Bic { }",
+            "reason": "This creates two classes, but doesn't use inheritance."
+        },
+        {
+            "answer": "final class GemStone { }\nclass Diamond: GemStone { }",
+            "reason": "This attempts to inherit from a final class, which is not allowed."
+        },
+        {
+            "answer": "final class Landmark { }\nfinal class Monument: Landmark { }",
+            "reason": "This attempts to inherit from a final class, which is not allowed."
+        },
+        {
+            "answer": "struct Massage { }\nclass HeadMassage: Massage { }",
+            "reason": "Inheritance is not possible with structs, only classes."
+        },
+        {
+            "answer": "class MusicPlayer { }\nstruct RecordPlayer: MusicPlayer { }",
+            "reason": "Inheritance is not possible with structs, only classes."
+        },
+        {
+            "answer": "class Movie { }\nfinal struct Comedy: Movie { }",
+            "reason": "Inheritance is not possible with structs, only classes."
+        }
+    ]
+}

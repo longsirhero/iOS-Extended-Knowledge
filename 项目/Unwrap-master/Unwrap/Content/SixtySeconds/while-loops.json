@@ -1,0 +1,60 @@
+{
+    "title": "While loops",
+    "postscript": "",
+    "reviewType": "singleSelection",
+    "question": "This loop prints five lines of text \u2013 true or false?",
+    "hint": "Watch out for text that is printed only when a condition is satisfied.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "var position = 5\nwhile position > 0 {\n\tprint(\"\\(position)!\")\n\tposition -= 1\n}",
+            "reason": "This code will print five lines of text."
+        },
+        {
+            "answer": "var number: Int = 10\nwhile number > 0 {\n\tnumber -= 2\n\tif number % 2 == 0 {\n\t\tprint(\"\\(number) is an even number.\")\n\t}\n}",
+            "reason": "This code will print five lines of text."
+        },
+        {
+            "answer": "var counter = 2\nwhile counter < 64 {\n\tprint(\"\\(counter) is a power of 2.\")\n\tcounter *= 2\n}",
+            "reason": "This code will print five lines of text."
+        },
+        {
+            "answer": "var averageScore = 2.5\nwhile averageScore < 15.0 {\n\taverageScore += 2.5\n\tprint(\"The average score is \\(averageScore)\")\n}",
+            "reason": "This code will print five lines of text."
+        },
+        {
+            "answer": "let colors = [\"Red\", \"Green\", \"Blue\", \"Orange\", \"Yellow\"]\nvar colorCounter = 0\nwhile colorCounter < 5 {\n\tprint(\"\\(colors[colorCounter]) is a popular color.\")\n\tcolorCounter += 1\n}",
+            "reason": "This code will print five lines of text."
+        },
+        {
+            "answer": "var cats: Int = 0\nwhile cats < 10 {\n\tcats += 1\n\tprint(\"I'm getting another cat.\")\n\tif cats == 4 {\n\t\tprint(\"Enough cats!\")\n\t\tcats = 10\n\t}\n}",
+            "reason": "This code will print five lines of text."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "while 0 < 5 {\n\tprint(\"I'm counting to 5!\")\n}",
+            "reason": "0 is always less than 5, so this will loop forever."
+        },
+        {
+            "answer": "var page: Int = 0\nwhile page <= 5 {\n\tpage += 1\n\tprint(\"I'm reading page \\(page).\")\n}",
+            "reason": "This will print six lines of text."
+        },
+        {
+            "answer": "let bottles = 10\nwhile bottles > 0 {\n\tbottles -= 2\n\tprint(\"\\(bottles) green bottles.\")\n}",
+            "reason": "<code>bottles<\/code> is a constant, so it can't be modified."
+        },
+        {
+            "answer": "var speed = 50\nwhile speed <= 55 {\n\tprint(\"Accelerating to \\(speed)\")\n\tspeed += 1\n}",
+            "reason": "This will print six lines of text."
+        },
+        {
+            "answer": "var itemsSold: Int = 0\nwhile itemsSold < 5000 {\n\titemsSold += 100\n\tif itemsSold % 1000 == 1000 {\n\t\tprint(\"\\(itemsSold) items sold - a big milestone!\")\n\t}\n}",
+            "reason": "This will print nothing."
+        },
+        {
+            "answer": "var pianoLesson = 1\nwhile pianoLesson < 5 {\n\tprint(\"This is lesson \\(pianoLesson)\")\n\tpianoLesson += 1\n}",
+            "reason": "This will print four lines of text."
+        }
+    ]
+}

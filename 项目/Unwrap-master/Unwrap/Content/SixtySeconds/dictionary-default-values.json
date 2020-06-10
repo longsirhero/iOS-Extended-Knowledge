@@ -1,0 +1,60 @@
+{
+    "title": "Dictionary default values",
+    "postscript": "",
+    "reviewType": "singleSelection",
+    "question": "This code is valid Swift \u2013 true or false?",
+    "hint": "Trying to read a dictionary using a key that doesn't exist is valid, but won't return any data.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "let capitals = [\"England\": \"London\", \"Wales\": \"Cardiff\"]\nlet scotlandCapital = capitals[\"Scotland\"]",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "let characters = [\"Captain\": \"Malcolm\", \"Engineer\": \"Kaylee\"]\nlet captain = characters[\"Captain\"]",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "let planets = [1: \"Mercury\", 2: \"Venus\"]\nlet venus = planets[2, default: \"Planet X\"]",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "let olympics = [2012: \"London\", 2016: \"Rio\", 2020: \"Tokyo\"]\nlet london = olympics[2012]",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "let books = [\"Austen\": \"Pride and Prejudice\"]\nlet dickens = books[\"Dickens\", default: \"Unknown\"]",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "let albums = [\"Prince\": \"Purple Rain\"]\nlet beatles = albums[\"Beatles\"]",
+            "reason": "This code is valid Swift."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "let ships = [\"Star Trek\", \"Enterprise\"]\nlet enterprise = ships[\"Star Trek\"]",
+            "reason": "This attempts to use an array like a dictionary, which is invalid."
+        },
+        {
+            "answer": "let users = [\"Taylor\", \"Taylor Swift\"]\nlet taylor = users[\"Taylor\", default: \"Anonymous\"]",
+            "reason": "This attempts to use an array like a dictionary, which is invalid."
+        },
+        {
+            "answer": "let scores = [\"Paul\": 80, \"Sophie\": 100]\nlet john = scores[john]",
+            "reason": "This dictionary has strings for its keys \u2013 trying to read <code>scores[john]<\/code> makes no sense, because it's not a string."
+        },
+        {
+            "answer": "let prices = [\"Milk\": 1, \"Pepsi\": 2]\nlet first = prices[0]",
+            "reason": "This attempts to use a dictionary like an array, which is invalid."
+        },
+        {
+            "answer": "let ratings = [1: \"Bad\", 2: \"OK\", 3: \"Good\"]\nlet rating = ratings[\"2\"]",
+            "reason": "This dictionary has integers for its keys, but the code attempts to use string keys to read values."
+        },
+        {
+            "answer": "let abbreviations = [\"m\": \"meters\", \"km\": \"kilometers\"]\nlet meters = abbreviations[\"m\", default \"m\"]",
+            "reason": "You must place a colon after <code>default<\/code> when reading a default value from a dictionary."
+        }
+    ]
+}

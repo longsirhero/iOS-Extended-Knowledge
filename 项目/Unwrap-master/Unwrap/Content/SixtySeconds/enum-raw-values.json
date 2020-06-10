@@ -1,0 +1,60 @@
+{
+    "title": "Enum raw values",
+    "postscript": "",
+    "reviewType": "multipleSelection",
+    "question": "Which of these statements about enums with raw values are true?",
+    "hint": "Raw values let us give each of our enum cases a value so they are more than just names.",
+    "syntaxHighlighting": false,
+    "correct": [
+        {
+            "answer": "Raw values let us give meaning to enum cases.",
+            "reason": "They let us say that <code>earth<\/code> has an underlying value of 3, for example."
+        },
+        {
+            "answer": "Raw values let us create enum values dynamically.",
+            "reason": "We can create an enum from its raw value."
+        },
+        {
+            "answer": "Integer raw values count from 0 automatically.",
+            "reason": "You can modify this to something specific if you want."
+        },
+        {
+            "answer": "You can give each case specific values if you want.",
+            "reason": "This is optional, but it gives us fine-grained control when needed."
+        },
+        {
+            "answer": "You can use integers for raw values.",
+            "reason": "Integers are one of the most common raw value types."
+        },
+        {
+            "answer": "You don't need to use raw values.",
+            "reason": "Raw values are entirely optional."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "Raw values are required for enums.",
+            "reason": "Raw values are optional."
+        },
+        {
+            "answer": "Raw values can't be used directly.",
+            "reason": "You can read them if you want, or create enum instances from them."
+        },
+        {
+            "answer": "If you give one case a value you must give them all values.",
+            "reason": "Swift is able to infer values based on the ones you provide."
+        },
+        {
+            "answer": "Raw values make enums into dictionaries.",
+            "reason": "Enums with raw values are still just enums."
+        },
+        {
+            "answer": "Raw values must always be strings.",
+            "reason": "You can use something else if you wish, such as integers."
+        },
+        {
+            "answer": "Raw values and associated values are the same.",
+            "reason": "Associated values attach extra data to an enum case; raw values are underlying data types for each case."
+        }
+    ]
+}

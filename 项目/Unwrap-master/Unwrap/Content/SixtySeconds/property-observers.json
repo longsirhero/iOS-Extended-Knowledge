@@ -1,0 +1,60 @@
+{
+    "title": "Property observers",
+    "postscript": "Alongside <code>didSet<\/code>, Swift also has <code>willSet<\/code> \u2013 it's called just before a property's value changes.",
+    "reviewType": "singleSelection",
+    "question": "This code is valid Swift \u2013 true or false?",
+    "hint": "<code>didSet<\/code> is the most common property observer, and is triggered when a property's value has just changed.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "struct Game {\n\tvar score: Int {\n\t\tdidSet {\n\t\t\tprint(\"Your score is now \\(score).\")\n\t\t}\n\t}\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct BankAccount {\n\tvar name: String\n\tvar isMillionnaire = false\n\tvar balance: Int {\n\t\tdidSet {\n\t\t\tif balance > 1_000_000 {\n\t\t\t\tisMillionnaire = true\n\t\t\t} else {\n\t\t\t\tisMillionnaire = false\n\t\t\t}\n\t\t}\n\t}\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct FishTank {\n\tvar capacity: Int\n\tvar fishCount: Int {\n\t\tdidSet {\n\t\t\tif fishCount > capacity {\n\t\t\t\tprint(\"You have too many fish!\")\n\t\t\t}\n\t\t}\n\t}\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct App {\n\tvar name: String\n\tvar isOnSale: Bool {\n\t\tdidSet {\n\t\t\tif isOnSale {\n\t\t\t\tprint(\"Go and download my app!\")\n\t\t\t} else {\n\t\t\t\tprint(\"Maybe download it later.\")\n\t\t\t}\n\t\t}\n\t}\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct Child {\n\tvar name: String\n\tvar age: Int {\n\t\tdidSet {\n\t\t\tprint(\"Happy birthday, \\(name)!\")\n\t\t}\n\t}\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct Person {\n\tvar clothes: String {\n\t\tdidSet {\n\t\t\tprint(\"I'm changing to \\(clothes)\")\n\t\t}\n\t}\n}",
+            "reason": "This code is valid Swift."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "struct Dog {\n\tvar age {\n\t\tdidSet {\n\t\t\tlet dogAge = age * 7\n\t\t\tprint(\"I'm now \\(dogAge) in dog years.\")\n\t\t}\n\t}\n}",
+            "reason": "<code>age<\/code> is missing a type annotation."
+        },
+        {
+            "answer": "struct StepCounter {\n\tvar steps: Int {\n\t\thasSet {\n\t\t\tprint(\"You've walked \\(steps) steps - good job!\")\n\t\t}\n\t}\n}",
+            "reason": "<code>hasSet<\/code> should be <code>didSet<\/code>."
+        },
+        {
+            "answer": "struct FuzzyClock {\n\tvar hour: Int {\n\t\tdset {\n\t\t\tif hour < 12 {\n\t\t\t\tprint(\"It's morning\")\n\t\t\t} else if hour < 18 {\n\t\t\t\tprint(\"It's the afternoon\")\n\t\t\t} else {\n\t\t\t\tprint(\"It's the evening.\")\n\t\t\t}\n\t\t}\n\t}\n}",
+            "reason": "<code>dset<\/code> should be <code>didSet<\/code>."
+        },
+        {
+            "answer": "struct FootballMatch {\n\tlet homeTeamScore: Int {\n\t\tdidSet {\n\t\t\tprint(\"Yay - we scored!\")\n\t\t}\n\t}\n\tlet awayTeamScore: Int {\n\t\tdidSet {\n\t\t\tprint(\"Boo - they scored!\")\n\t\t}\n\t}\n}",
+            "reason": "You can't attach a property observer to a constant, because it will never change."
+        },
+        {
+            "answer": "enum Student {\n\tvar name: String\n\tvar debt: Int {\n\t\tdidSet {\n\t\t\tif debt < 5_000 {\n\t\t\t\tprint(\"This is great!\")\n\t\t\t} else if debt < 20_000 {\n\t\t\t\tprint(\"This is OK.\")\n\t\t\t} else {\n\t\t\t\tprint(\"Can I fake my own death?\")\n\t\t\t}\n\t\t}\n\t}\n}",
+            "reason": "This attempts to add stored properties to an enum, which isn't possible."
+        },
+        {
+            "answer": "struct House {\n\tvar numberOfOccupants: Int {\n\t\tdidSet:\n\t\t\tprint(\"\\(numberOfOccupants) people live here now.\")\n\t}\n}",
+            "reason": "<code>didSet:<\/code> should be <code>didSet {<\/code>."
+        }
+    ]
+}

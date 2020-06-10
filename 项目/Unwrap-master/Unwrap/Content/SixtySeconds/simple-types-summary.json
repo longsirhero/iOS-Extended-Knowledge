@@ -1,0 +1,60 @@
+{
+    "title": "Simple types: Summary",
+    "postscript": "",
+    "reviewType": "multipleSelection",
+    "question": "Which of these lines make variables?",
+    "hint": "Make sure the type annotations match what's placed inside!",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "var name = \"Rumpelstiltskin\"",
+            "reason": "This creates a variable called <code>name<\/code>."
+        },
+        {
+            "answer": "var depth = 10000",
+            "reason": "This creates a variable called <code>depth<\/code>."
+        },
+        {
+            "answer": "var isActive = true",
+            "reason": "This creates a variable called <code>isActive<\/code>."
+        },
+        {
+            "answer": "var score: Double = 10",
+            "reason": "This creates a variable called <code>score<\/code>."
+        },
+        {
+            "answer": "var isEnabled: Bool = false",
+            "reason": "This creates a variable called <code>isEnabled<\/code>."
+        },
+        {
+            "answer": "var state = \"game over\"",
+            "reason": "This creates a variable called <code>state<\/code>."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "let numberOfBooks = 6",
+            "reason": "This creates a constant."
+        },
+        {
+            "answer": "let cpuType = \"Intel\"",
+            "reason": "This creates a constant."
+        },
+        {
+            "answer": "let isOverflowing: Bool = \"true\"",
+            "reason": "This attempts to assign a string to a Boolean, which is invalid in Swift."
+        },
+        {
+            "answer": "var isActive: Bool = 0",
+            "reason": "This attempts to assign an integer to a Boolean, which is invalid in Swift."
+        },
+        {
+            "answer": "var password: String = 12345",
+            "reason": "This attempts to assign an integer to a string, which is invalid in Swift."
+        },
+        {
+            "answer": "var depthInMeters: Int = 10.0",
+            "reason": "This attempts to assign a double to an integer, which is invalid in Swift."
+        }
+    ]
+}

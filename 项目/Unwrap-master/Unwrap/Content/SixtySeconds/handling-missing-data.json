@@ -1,0 +1,60 @@
+{
+    "title": "Handling missing data",
+    "postscript": "Earlier you learned about the <code>index()<\/code> method of arrays, which returns the position of an item inside an array. This actually returns an optional position, because the item might not be in the array.",
+    "reviewType": "multipleSelection",
+    "question": "Which of these make good candidates for optionals?",
+    "hint": "Optionals are useful when you might not know some information or it might not exist.",
+    "syntaxHighlighting": false,
+    "correct": [
+        {
+            "answer": "The position of an item in an array.",
+            "reason": "The item may or may not exist in the array."
+        },
+        {
+            "answer": "Someone's middle name.",
+            "reason": "A person may or may not have a middle name"
+        },
+        {
+            "answer": "Someone's birthday if you know it.",
+            "reason": "You might not know their birthday."
+        },
+        {
+            "answer": "The capital city of a country your user just typed in.",
+            "reason": "The user may have made a mistake with their typing and the country might not exist."
+        },
+        {
+            "answer": "The current destination of a car's satellite navigation system.",
+            "reason": "There may or may not be a current destination set."
+        },
+        {
+            "answer": "The year a user last went on a boat.",
+            "reason": "The user might not have ever been on a boat."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "The sum of 10 numbers.",
+            "reason": "Arithmetic like this always has an answer, even if that answer is 0."
+        },
+        {
+            "answer": "The length of a string.",
+            "reason": "All strings, even empty ones, have a length."
+        },
+        {
+            "answer": "An array of all languages spoken in your country.",
+            "reason": "Even if there were a country where no one lived, the array would still exist - it would just be empty."
+        },
+        {
+            "answer": "The number of pages in a book.",
+            "reason": "All books have a page count; even if all the pages are removed it would just have a page count of 0."
+        },
+        {
+            "answer": "The international dialling code for a country.",
+            "reason": "All countries have an international dialling code."
+        },
+        {
+            "answer": "The population of a city.",
+            "reason": "All cities have a population count; even a deserted city has a population count of 0."
+        }
+    ]
+}

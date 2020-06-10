@@ -1,0 +1,60 @@
+{
+    "title": "Infinite loops",
+    "postscript": "",
+    "reviewType": "singleSelection",
+    "question": "This loop will never end \u2013 true or false?",
+    "hint": "Infinite loops are commonly made using <code>while true<\/code> but other conditions can also work.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "while true {\n\tprint(\"Fakers gonna fake\")\n}",
+            "reason": "This is an infinite loop."
+        },
+        {
+            "answer": "var loggedIn = true\nwhile loggedIn {\n\tprint(\"Waiting for user input...\")\n}",
+            "reason": "This is an infinite loop because <code>loggedIn<\/code> will never become false."
+        },
+        {
+            "answer": "var counter = 1\nrepeat {\n\tprint(\"Counting: \\(counter)\")\n\tcounter += 2\n} while counter != 10",
+            "reason": "This is an infinite loop because <code>counter<\/code> will reach 7, then 9, then 11, then continue upwards without ever reaching 10."
+        },
+        {
+            "answer": "var isVisible = true\nwhile isVisible == true {\n\tisVisible = false\n\tif isVisible == false {\n\t\tisVisible = true\n\t}\n}",
+            "reason": "This is an infinite loop because <code>isVisible<\/code> will always be true."
+        },
+        {
+            "answer": "var passengerCount = 0\nrepeat {\n\tprint(\"There are \\(passengerCount) passengers\")\n\tpassengerCount *= 2\n} while passengerCount < 10",
+            "reason": "This is an infinite loop because <code>passengerCount<\/code> will always be 0 – multiplying 0 by 2 still makes 0."
+        },
+        {
+            "answer": "var wantStarWarsSpinOffs = true\nwhile wantStarWarsSpinOffs {\n\tprint(\"It's time for another spin-off!\")\n}",
+            "reason": "This is an infinite loop because <code>wantStarWarsSpinOffs<\/code> will never become false."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "while false {\n\tprint(\"Players gonna play\")\n}",
+            "reason": "The loop condition is false, so this loop won't execute even once."
+        },
+        {
+            "answer": "var isActive = false\nwhile isActive {\n\tprint(\"Checking for new data\")\n}",
+            "reason": "The loop condition is false, so this loop won't execute even once."
+        },
+        {
+            "answer": "var kids = 1\nrepeat {\n\tprint(\"Kids in the class: \\(kids)\")\n\tkids += 1\n} while kids != 10",
+            "reason": "When <code>kids<\/code> reaches 10 this loop will terminate."
+        },
+        {
+            "answer": "var isRead = false\nwhile isRead {\n\tisRead = true\n\tprint(\"You read this message.\")\n}",
+            "reason": "The loop condition is false, so this loop won't execute even once."
+        },
+        {
+            "answer": "var securityHoles = 1\nrepeat {\n\tprint(\"Security hole reported!\")\n\tsecurityHoles += 1\n} while securityHoles < 10",
+            "reason": "When <code>securityHoles<\/code> reaches 10 this loop will terminate."
+        },
+        {
+            "answer": "var exCharacters = 0\nvar bookSeries = \"Game of Thrones\"\nwhile true {\n\tprint(\"It's time for someone else to go\")\n\texCharacters += \"1\"\n}",
+            "reason": "This attempts to add a string to an integer, which is invalid."
+        }
+    ]
+}

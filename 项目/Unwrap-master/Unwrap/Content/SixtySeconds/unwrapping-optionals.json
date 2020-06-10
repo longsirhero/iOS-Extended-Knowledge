@@ -1,0 +1,60 @@
+{
+    "title": "Unwrapping optionals",
+    "postscript": "You can only unwrap optionals. Trying to unwrap non-optional values will cause an error.",
+    "reviewType": "singleSelection",
+    "question": "This code will print a message \u2013 true or false?",
+    "hint": "The code inside <code>if let<\/code> will only be run if there was a value inside your optional.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "let song: String? = \"Shake it Off\"\nif let unwrappedSong = song {\n\tprint(\"The name has \\(unwrappedSong.count) letters.\")\n}",
+            "reason": "This code will print a message."
+        },
+        {
+            "answer": "let userAge: Int? = 38\nif let age = userAge {\n\tprint(\"You are \\(age) years old.\")\n}",
+            "reason": "This code will print a message."
+        },
+        {
+            "answer": "var favoriteMovie: String? = nil\nfavoriteMovie = \"The Life of Brian\"\nif let movie = favoriteMovie {\n\tprint(\"Your favorite movie is \\(movie).\")\n} else {\n\tprint(\"You don't have a favorite movie.\")\n}",
+            "reason": "This code will print a message."
+        },
+        {
+            "answer": "let currentDestination: String? = nil\nif let destination = currentDestination {\n\tprint(\"We're walking to \\(destination).\")\n} else {\n\tprint(\"We're just wandering.\")\n}",
+            "reason": "This code will print a message."
+        },
+        {
+            "answer": "let album = \"Red\"\nlet albums = [\"Reputation\", \"Red\", \"1989\"]\nif let position = albums.firstIndex(of: album) {\n\tprint(\"Found \\(album) at position \\(position).\")\n}",
+            "reason": "This code will print a message."
+        },
+        {
+            "answer": "var winner: String? = nil\nwinner = \"Daley Thompson\"\nif let name = winner {\n\tprint(\"And the winner is... \\(name)!\")\n}",
+            "reason": "This code will print a message."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "var score: Int = nil\nscore = 556\nif let playerScore = score {\n\tprint(\"You scored \\(playerScore) points.\")\n}",
+            "reason": "This attempts to assign <code>nil<\/code> to a non-optional integer."
+        },
+        {
+            "answer": "let favoriteTennisPlayer: String? = \"Andy Murray\"\nif let player {\n\tprint(\"Let's watch \\(player)'s highlights video on YouTube.\")\n}",
+            "reason": "<code>if let<\/code> needs to bind an optional to a new, unwrapped name, such as <code>if let player = player<\/code>."
+        },
+        {
+            "answer": "let menuItems: [String]? = [\"Pizza\", \"Pasta\"]\nif let items = menuItems {\n\tprint(\"There are \\(menuItems.count) items to choose from.\")\n}",
+            "reason": "This attempts to use <code>menuItems<\/code> inside the <code>if let<\/code>, when really it should use <code>items<\/code>."
+        },
+        {
+            "answer": "var weatherForecast: String = \"sunny\"\nif let forecast = weatherForecast {\n\tprint(\"The forecast is \\(forecast).\")\n} else {\n\tprint(\"No forecast available.\")\n}",
+            "reason": "This attempts to use <code>if let<\/code> to unwrap <code>weatherForecast<\/code>, which is not optional."
+        },
+        {
+            "answer": "let tableHeight: Double? = 100\nif tableHeight > 85.0 {\n\tprint(\"The table is too high.\")\n}",
+            "reason": "This attempts to compare an optional <code>Double<\/code> against 85, which is not possible."
+        },
+        {
+            "answer": "var bestScore: Int? = nil\nbestScore = 101\nif bestScore > 100 {\n\tprint(\"You got a high score!\")\n} else {\n\tprint(\"Better luck next time.\")\n}",
+            "reason": "This attempts to compare an optional <code>Int<\/code> against 100, which is not possible."
+        }
+    ]
+}

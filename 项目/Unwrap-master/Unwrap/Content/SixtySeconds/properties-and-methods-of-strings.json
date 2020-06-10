@@ -1,0 +1,60 @@
+{
+    "title": "Properties and methods of strings",
+    "postscript": "One of the most useful methods of strings is <code>contains()<\/code>, which returns true if the string contains another string. For example, <code>\"world\".contains(\"orl\")<\/code> is true.",
+    "reviewType": "multipleSelection",
+    "question": "Which of these are true?",
+    "hint": "Strings are case-sensitive by default, so ABC is different from Abc and aBc.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "let quote = \"Time is an illusion. Lunchtime doubly so.\"\nquote.contains(\"Lunch\")",
+            "reason": "This is true."
+        },
+        {
+            "answer": "let song = \"Shake it Off\"\nsong.uppercased().contains(\"SHAKE\")",
+            "reason": "This is true."
+        },
+        {
+            "answer": "var mac = \"iMac\"\nmac.hasPrefix(\"i\")",
+            "reason": "This is true."
+        },
+        {
+            "answer": "let username = \"twostraws\"\nusername.uppercased() == \"TWOSTRAWS\"",
+            "reason": "This is true."
+        },
+        {
+            "answer": "let joke = \"What's red and smells like blue paint? Red paint.\"\njoke.count > 10",
+            "reason": "This is true."
+        },
+        {
+            "answer": "var str = \"\"\nfor i in 1...5 {\n\tstr += \"\\(i)\"\n}\nstr.count == 5",
+            "reason": "This is true."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "var singer = \"Taylor Swift\"\nsinger.hasPrefix(\"TAY\")",
+            "reason": "This is false, because strings are case-sensitive in Swift."
+        },
+        {
+            "answer": "var favoriteIceCream = \"choc chip\"\nfavoriteIceCream.count > 10",
+            "reason": "This is false, because \"choc chip\" is only nine characters."
+        },
+        {
+            "answer": "var superHero = \"Mario\"\nsuperHero.uppercased() == \"Mario\"",
+            "reason": "This is false, because strings are case-sensitive in Swift."
+        },
+        {
+            "answer": "let definitelyTrue = \"Fox in box\"\ndefinitelyTrue.contains(\"socks\")",
+            "reason": "This is false, because the string we're looking for doesn't exist in <code>definitelyTrue<\/code>."
+        },
+        {
+            "answer": "let shoes = \"Jimmy Choo\"\nshoes.contains(Choo)",
+            "reason": "This is invalid Swift – \"Choo\" must be surrounded by quote marks."
+        },
+        {
+            "answer": "let content = \"Europe\"\ncontinent.contains(\"Europe\")",
+            "reason": "This is invalid Swift – the constant's name is spelled differently."
+        }
+    ]
+}

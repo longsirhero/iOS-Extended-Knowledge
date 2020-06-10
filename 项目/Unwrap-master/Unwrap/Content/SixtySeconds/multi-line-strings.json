@@ -1,0 +1,60 @@
+{
+    "title": "Multi-line strings",
+    "postscript": "You can write \"\\n\" in any string to add a line break inside your text.",
+    "reviewType": "singleSelection",
+    "question": "This code creates multi-line strings correctly \u2013 true or false?",
+    "hint": "Multi-line strings start and end with triple quote marks, but those quotes must not have text on the same line.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "var rossetti = \"\"\"\nFor if the darkness and corruption leave\nA vestige of the thoughts that once I had,\nBetter by far you should forget and smile\nThan that you should remember and be sad.\n\"\"\"",
+            "reason": "This creates a valid multi-line string."
+        },
+        {
+            "answer": "var burns = \"\"\"\nThe best laid schemes\no' mice an' men\ngang aft agley\n\"\"\"",
+            "reason": "This creates a valid multi-line string."
+        },
+        {
+            "answer": "var wordsworth = \"\"\"\nI wandered lonely as a cloud\nthat floats on high\no'er vales and hills\n\"\"\"",
+            "reason": "This creates a valid multi-line string."
+        },
+        {
+            "answer": "var shakespeare = \"\"\"\nTo be or not to be\nthat is the question\n\"\"\"",
+            "reason": "This creates a valid multi-line string."
+        },
+        {
+            "answer": "var joseph = \"\"\"\nWhen I am an old woman,\nI shall wear purple\nwith a red hat that doesn't go,\nand doesn't suit me\n\"\"\"",
+            "reason": "This creates a valid multi-line string."
+        },
+        {
+            "answer": "var tennyson = \"\"\"\nTis better to have loved\nand lost than never\n to have loved at all\n\"\"\"",
+            "reason": "This creates a valid multi-line string."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "var coleridge = \"\"\"\nWater, water, everywhere\nand not a drop to drink\"\"\"",
+            "reason": "The final three quotes must be on a line by themselves."
+        },
+        {
+            "answer": "var eliot = \"This is the way the world ends\nNot with a bang but with a whimper\"",
+            "reason": "Multi-line strings must start and end with three double quotes on lines by themselves."
+        },
+        {
+            "answer": "var lear = \"The Owl and the Pussy-cat went to sea\nIn a beautiful pea-green boat,\nThey took some honey, and plenty of money,\nWrapped up in a five-pound note.\"",
+            "reason": "Multi-line strings must start and end with three double quotes on lines by themselves."
+        },
+        {
+            "answer": "var henley = \"\"\"I am the master of my fate\nI am the captain of my soul\"\"\"",
+            "reason": "The final three quotes must be on a line by themselves."
+        },
+        {
+            "answer": "var brooke = \"\"If I should die,\nthink only this of me\nThere is some corner of a foreign field\nThat is forever England.\"",
+            "reason": "Multi-line strings must start and end with three double quotes on lines by themselves."
+        },
+        {
+            "answer": "var shelley = \"My name is Ozymandias, King of Kings\nLook on my works, ye mighty, and despair!\"",
+            "reason": "Multi-line strings must start and end with three double quotes on lines by themselves."
+        }
+    ]
+}

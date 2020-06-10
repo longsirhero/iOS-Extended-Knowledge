@@ -1,0 +1,60 @@
+{
+    "title": "Access control",
+    "postscript": "",
+    "reviewType": "singleSelection",
+    "question": "This code is valid Swift \u2013 true or false?",
+    "hint": "Make sure that <code>private<\/code> properties aren't accessed from outside their struct.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "struct Contributor {\n\tprivate var name = \"Anonymous\"\n}\nlet paul = Contributor()",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct Person {\n\tprivate var socialSecurityNumber: String\n\tinit(ssn: String) {\n\t\tsocialSecurityNumber = ssn\n\t}\n}\nlet sarah = Person(ssn: \"555-55-5555\")",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct Office {\n\tprivate var passCode: String\n\tvar address: String\n\tvar employees: [String]\n\tinit(address: String, employees: [String]) {\n\t\tself.address = address\n\t\tself.employees = employees\n\t\tself.passCode = \"SEKRIT\"\n\t}\n}\nlet monmouthStreet = Office(address: \"30 Monmouth St\", employees: [\"Paul Hudson\"])",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct App {\n\tvar name: String\n\tprivate var sales = 0\n\tinit(name: String) {\n\t\tself.name = name\n\t}\n}\nlet spotify = App(name: \"Spotify\")",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct Customer {\n\tvar name: String\n\tprivate var creditCardNumber: Int\n\tinit(name: String, creditCard: Int) {\n\t\tself.name = name\n\t\tself.creditCardNumber = creditCard\n\t}\n}\nlet lottie = Customer(name: \"Lottie Knights\", creditCard: 1234567890)",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct School {\n\tvar staffNames: [String]\n\tprivate var studentNames: [String]\n\tinit(staff: String...) {\n\t\tself.staffNames = staff\n\t\tself.studentNames = [String]()\n\t}\n}\nlet royalHigh = School(staff: \"Mrs Hughes\")",
+            "reason": "This code is valid Swift."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "struct Toy {\n\tvar customerPrice: Double\n\tprivate var actualPrice: Int\n\tinit(price: Int) {\n\t\tactualPrice = price\n\t\tcustomerPrice = actualPrice * 2\n\t}\n}\nlet buzz = Toy(price: 10)",
+            "reason": "<code>actualPrice</code> is an <code>Int</code> and multiplying it by 2 makes another <code>Int</code>, but Swift won't let us assign that integer to a <code>Double</code>."
+        },
+        {
+            "answer": "struct RebelBase {\n\tprivate var location: String\n\tprivate var peopleCount: Int\n\tinit(location: String, people: Int) {\n\t\tself.location = location\n\t\tself.people = peopleCount\n\t}\n}\nlet base = RebelBase(location: \"Yavin\", people: 1000)",
+            "reason": "This attempts to set a property called <code>people</code>, but no such property exists."
+        },
+        {
+            "answer": "struct FacebookUser {\n\tprivate var privatePosts: [String]\n\tpublic var publicPosts: [String]\n}\nlet user = FacebookUser()",
+            "reason": "This has a private property, so Swift is unable to generate its memberwise initializer for us."
+        },
+        {
+            "answer": "struct SecretAgent {\n\tprivate var actualName: String\n\tpublic var codeName: String\n\tinit(name: String, codeName: String) {\n\t\tself.actualName = name\n\t\tself.codeName = codeName\n\t}\n}\nlet bond = SecretAgent(name: \"James Bond\", codeName: 007)",
+            "reason": "The <code>codeName</code> property is marked as a string, but the code attempts to use an integer."
+        },
+        {
+            "answer": "struct Doctor {\n\tvar name: String\n\tvar location: String\n\tprivate var currentPatient = \"No one\"\n}\nlet drJones = Doctor(name: \"Esther Jones\", location: \"Bristol\")",
+            "reason": "This has a private property, so Swift is unable to generate its memberwise initializer for us."
+        },
+        {
+            "answer": "struct Order {\n\tprivate var id: Int\n\tinit(id: Int) {\n\t\tself.id = id\n\t}\n}\nlet order = Order(id: \"1\")",
+            "reason": "The initializer expects an <code>Int</code> but is given a <code>String</code>."
+        }
+    ]
+}

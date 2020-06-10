@@ -36,7 +36,7 @@
     NSLog(@"VCRoot 事件响应 next == %@", self.nextResponder);
     
     // 手动向下传递
-    [super touchesBegan:touches withEvent:event];
+//    [super touchesBegan:touches withEvent:event];
 }
 
 @end

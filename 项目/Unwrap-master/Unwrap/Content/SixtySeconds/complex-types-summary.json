@@ -1,0 +1,60 @@
+{
+    "title": "Complex types: Summary",
+    "postscript": "",
+    "reviewType": "multipleSelection",
+    "question": "Which of these lines make an array, dictionary, set, or tuple?",
+    "hint": "Make sure the type annotations match what's placed inside.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "let credentials = [\"username\": \"twostraws\"]",
+            "reason": "This creates a dictionary."
+        },
+        {
+            "answer": "var scores = [100, 90, 85]",
+            "reason": "This creates an array."
+        },
+        {
+            "answer": "let usedWords = Set([\"hello\", \"world\"])",
+            "reason": "This creates a set."
+        },
+        {
+            "answer": "var fibonacci = (1, 1, 2, 3, 5, 8)",
+            "reason": "This creates a tuple."
+        },
+        {
+            "answer": "let episodes = [String]()",
+            "reason": "This creates an empty array."
+        },
+        {
+            "answer": "var names = [\"Beyonc\u00e9\", \"Jay-Z\"]",
+            "reason": "This creates an array."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "let isConfigured = false",
+            "reason": "This creates a Boolean."
+        },
+        {
+            "answer": "let ages: Int = [26, 28, 39]",
+            "reason": "This attempts to place an array of integers into a single integer, which is invalid."
+        },
+        {
+            "answer": "let winners: [String] = (\"David\", \"Jason\", \"Raquel\")",
+            "reason": "This attempts to place a tuple of strings into an array of strings."
+        },
+        {
+            "answer": "var repeatCount = [String: Int]",
+            "reason": "This is invalid Swift \u2013 it needs parentheses after <code>[String: Int]<\/code>."
+        },
+        {
+            "answer": "var unreadMessages: Int = \"12\"",
+            "reason": "This attempts to place a string into an integer."
+        },
+        {
+            "answer": "var lotteryNumbers = Set(11, 23, 44)",
+            "reason": "To create a set you must pass it an array of values rather than just some loose numbers."
+        }
+    ]
+}

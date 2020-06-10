@@ -1,0 +1,60 @@
+{
+    "title": "Shorthand parameter names",
+    "postscript": "",
+    "reviewType": "multipleSelection",
+    "question": "When passing a closure as a function parameter, which of these statements are true?",
+    "hint": "You either list your parameters and return value, or you use shorthand syntax - Swift won't allow you to use both.",
+    "syntaxHighlighting": false,
+    "correct": [
+        {
+            "answer": "Swift can infer the parameters the closure accepts.",
+            "reason": "This is correct."
+        },
+        {
+            "answer": "Swift can infer the return type.",
+            "reason": "This is correct."
+        },
+        {
+            "answer": "If there is only one line of code, you can skip writing <code>return<\/code>",
+            "reason": "This is correct."
+        },
+        {
+            "answer": "Shorthand parameters are written as <code>$0<\/code>, <code>$1<\/code> and so on.",
+            "reason": "This is correct."
+        },
+        {
+            "answer": "When using shorthand parameters you don't list the parameters you accept.",
+            "reason": "This is correct. In fact, trying to list the parameters will cause an error."
+        },
+        {
+            "answer": "Swift automatically provides the <code>$<\/code> variables; we don't define them ourselves.",
+            "reason": "This is correct."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "Shorthand syntax can only be used with integers.",
+            "reason": "It works fine with all data types."
+        },
+        {
+            "answer": "Shorthand syntax provides up to three parameters automatically.",
+            "reason": "It provides as many as are needed."
+        },
+        {
+            "answer": "Shorthand syntax can only be used with Swift's built-in functions like <code>print()<\/code>",
+            "reason": "It works fine with all functions, even ones we write."
+        },
+        {
+            "answer": "Shorthand parameters are written as <code>#0<\/code>, <code>#1<\/code>, and so on.",
+            "reason": "They are written using <code>$0<\/code>, <code>$1<\/code>, and so on."
+        },
+        {
+            "answer": "You must always list the parameters you accept when using shorthand syntax.",
+            "reason": "You must never do this; Swift does not let you use both."
+        },
+        {
+            "answer": "Shorthand parameters can't be used with string interpolation.",
+            "reason": "They work fine with string interpolation."
+        }
+    ]
+}

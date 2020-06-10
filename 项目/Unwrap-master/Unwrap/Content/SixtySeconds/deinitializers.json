@@ -1,0 +1,60 @@
+{
+    "title": "Deinitializers",
+    "postscript": "The <code>deinit<\/code> method doesn't have parentheses after it, because it never takes parameters. So, always write <code>deinit<\/code> rather than <code>deinit()<\/code>.",
+    "reviewType": "singleSelection",
+    "question": "This code will print a message when an instance of the type is destroyed \u2013 true or false?",
+    "hint": "Structs cannot have deinitializers.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "class IceCream {\n\tdeinit {\n\t\tprint(\"No more icecream :(\")\n\t}\n}",
+            "reason": "This will print a message when an instance of <code>IceCream<\/code> is destroyed."
+        },
+        {
+            "answer": "class Job {\n\tdeinit {\n\t\tprint(\"I quit!\")\n\t}\n}",
+            "reason": "This will print a message when an instance of <code>Job<\/code> is destroyed."
+        },
+        {
+            "answer": "class Lightsaber {\n\tdeinit {\n\t\tprint(\"Fssshhp!\")\n\t}\n}",
+            "reason": "This will print a message when an instance of <code>Lightsaber<\/code> is destroyed."
+        },
+        {
+            "answer": "class Firefly {\n\tdeinit {\n\t\tprint(\"I'm still annoyed that this was cancelled.\")\n\t}\n}",
+            "reason": "This will print a message when an instance of <code>Firefly<\/code> is destroyed."
+        },
+        {
+            "answer": "class MagicSpell {\n\tdeinit {\n\t\tprint(\"Good job, Hermione!\")\n\t}\n}",
+            "reason": "This will print a message when an instance of <code>MagicSpell<\/code> is destroyed."
+        },
+        {
+            "answer": "class DisneyMovie {\n\tdeinit {\n\t\tprint(\"Relax, there'll be another in a year.\")\n\t}\n}",
+            "reason": "This will print a message when an instance of <code>DisneyMovie<\/code> is destroyed."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "class Meal {\n\tdealloc {\n\t\tprint(\"Please send over the bill.\")\n\t}\n}",
+            "reason": "<code>dealloc<\/code> is invalid; we need to use <code>deinit<\/code>."
+        },
+        {
+            "answer": "class Election {\n\tinit() {\n\t\tprint(\"And the winner is...\")\n\t}\n}",
+            "reason": "This class does not have a deinitializer."
+        },
+        {
+            "answer": "struct Olympics {\n\tfunc deinit() {\n\t\tprint(\"And now for the closing ceremony.\")\n\t}\n}",
+            "reason": "You don't use <code>func<\/code> or write parentheses after <code>deinit<\/code>."
+        },
+        {
+            "answer": "struct Fairytale {\n\tdeinit {\n\t\tprint(\"And they lived happily ever after.\")\n\t}\n}",
+            "reason": "Structs may not have deinitializers."
+        },
+        {
+            "answer": "class PhoneCall {\n\tfunc deinit {\n\t\tprint(\"Bye!\")\n\t}\n}",
+            "reason": "You don't write <code>func<\/code> before a deinitializer."
+        },
+        {
+            "answer": "class MarketingFlyer {\n\tdeinit() {\n\t\tprint(\"You're going straight into recycling.\")\n\t}\n}",
+            "reason": "You don't write parentheses after <code>deinit<\/code>."
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "title": "Default parameters",
+    "postscript": "",
+    "reviewType": "singleSelection",
+    "question": "This code is valid Swift \u2013 true or false?",
+    "hint": "Look closely at the type of the parameters and the default values being used.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "func parkCar(_ type: String, automatically: Bool = true) {\n\tif automatically {\n\t\tprint(\"Nice - my \\(type) parked itself!\")\n\t} else {\n\t\tprint(\"I guess I'll have to do it.\")\n\t}\n}\nparkCar(\"Tesla\")",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func calculateWages(payBand: Int, isOvertime: Bool = false) -> Int {\n\tvar pay = 10_000 * payBand\n\tif isOvertime {\n\t\tpay *= 2\n\t}\n\treturn pay\n}\ncalculateWages(payBand: 5, isOvertime: true)",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func scoreGoal(overheadKick: Bool = false) {\n\tif overheadKick {\n\t\tprint(\"Wow - amazing!\")\n\t} else {\n\t\tprint(\"Great goal!\")\n\t}\n}\nscoreGoal(overheadKick: true)",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func playGame(name: String, cheat: Bool = false) {\n\tif cheat {\n\t\tprint(\"Let's play \\(name); I bet I win!\")\n\t} else {\n\t\tprint(\"Let's play \\(name)!\")\n\t}\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func packLunchbox(number: Int, healthy: Bool = true) {\n\tfor _ in 0..<number {\n\t\tif healthy {\n\t\t\tprint(\"I'm packing a healthy lunchbox.\")\n\t\t} else {\n\t\t\tprint(\"Pizza for everyone!\")\n\t\t}\n\t}\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func runRace(distance: Int = 10) {\n\tif distance < 5 {\n\t\tprint(\"This should be easy!\")\n\t} else if distance < 10 {\n\t\tprint(\"This should be a nice challenge.\")\n\t} else {\n\t\tprint(\"Let's do this!\")\n\t}\n}",
+            "reason": "This code is valid Swift."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "func goToWarp(speed: Int) {\n\tif speed > 9 {\n\t\tprint(\"The engines cannae take any more!\")\n\t} else {\n\t\tprint(\"Going to warp \\(speed)...\")\n\t}\n}\n\ngoToWarp()",
+            "reason": "This calls the <code>goToWarp()<\/code> function without passing in its parameter."
+        },
+        {
+            "answer": "func brushTeeth(useFloss: Bool = true) {\n\tif floss {\n\t\tprint(\"I'm flossing first.\")\n\t}\n\tprint(\"I'm brushing my teeth.\")\n}",
+            "reason": "The parameter is called <code>useFloss<\/code> not <code>floss<\/code>."
+        },
+        {
+            "answer": "func playGolf(holes: String = 18) {\n\tprint(\"Let's play \\(holes) holes of golf.\")\n}\nplayGolf()",
+            "reason": "The <code>playGolf()<\/code> function takes a <code>String<\/code> parameter, but uses a default value of an integer."
+        },
+        {
+            "answer": "func takePicture(withFlash flash Bool = true) {\n\tif flash {\n\t\tprint(\"I'm taking a photo with flash\")\n\t} else {\n\t\tprint(\"I'm taking a photo\")\n\t}\n}",
+            "reason": "The syntax <code>withFlash flash Bool = true<\/code> is invalid, because it's missing a colon."
+        },
+        {
+            "answer": "func eatMeal(withDessert: Bool = true) {\n\tif withDessert {\n\t\tprint(\"All the best meals include dessert.\")\n\t} else {\n\t\tprint(\"Bah... maybe next time.\")\n\t}\n}\neatMeal(dessert: true)",
+            "reason": "This calls the <code>eatMeal()<\/code> function with the wrong parameter name."
+        },
+        {
+            "answer": "func fireArrow(skillLevel: Int = 1) -> String {\n\tswitch skillLevel {\n\tcase 1...3:\n\t\tprint(\"You missed the target.\")\n\tcase 4...7:\n\t\tprint(\"You hit the target.\")\n\tcase 8...10:\n\t\tprint(\"Great shot!\")\n\t}\n}",
+            "reason": "This function must return a string."
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "title": "Using closures as parameters when they accept parameters",
+    "postscript": "",
+    "reviewType": "singleSelection",
+    "question": "This code is valid Swift \u2013 true or false?",
+    "hint": "Make sure each function is calling its closure with the correct parameters.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "func makeSale(signContract: (String) -> Void) {\n\tlet clientName = \"Apple\"\n\tprint(\"\\(clientName) should buy our product.\")\n\tprint(\"You're interested? Great! Sign here.\")\n\tsignContract(clientName)\n}\nmakeSale { (client: String) in\n\tprint(\"We agree to pay you $100 million.\")\n\tprint(\"Signed, \\(client)\")\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func study(reviseNotes: (String) -> Void) {\n\tlet notes = \"Napoleon was a short, dead dude.\"\n\tfor _ in 1...10 {\n\t\treviseNotes(notes)\n\t}\n}\nstudy { (notes: String) in\n\tprint(\"I'm reading my notes: \\(notes)\")\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func getDirections(to destination: String, then travel: ([String]) -> Void) {\n\tlet directions = [\n\t\t\"Go straight ahead\",\n\t\t\"Turn left onto Station Road\",\n\t\t\"Turn right onto High Street\",\n\t\t\"You have arrived at \\(destination)\"\n\t]\n\ttravel(directions)\n}\ngetDirections(to: \"London\") { (directions: [String]) in\n\tprint(\"I'm getting my car.\")\n\tfor direction in directions {\n\t\tprint(direction)\n\t}\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func fetchData(then parse: (String) -> Void) {\n\tlet data = \"Success!\"\n\tparse(data)\n}\nfetchData { (data: String) in\n\tprint(\"Data received: \\(data)\")\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func runKidsParty(activities: ([String]) -> Void) {\n\tlet kids = [\"Bella\", \"India\", \"Phoebe\"]\n\tactivities(kids)\n}\nrunKidsParty { (names: [String]) in\n\tfor name in names {\n\t\tprint(\"Here's your party bag, \\(name).\")\n\t}\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func fix(item: String, payBill: (Int) -> Void) {\n\tprint(\"I've fixed your \\(item)\")\n\tpayBill(450)\n}\nfix(item: \"roof\") { (bill: Int) in\n\tprint(\"You want $\\(bill) for that? Outrageous!\")\n}",
+            "reason": "This code is valid Swift."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "func postOnTwitter(handler: (Int) -> Void) {\n\tprint(\"What's orange and sounds like a parrot? A carrot.\")\n\tlet replies = 32\n\tresponseHandler(replies)\n}\npostOnTwitter { (replies: Int) in\n\tprint(\"Your post had \\(replies) replies.\")\n}",
+            "reason": "This attempts to call <code>responseHandler<\/code>, when really it should call <code>handler<\/code>."
+        },
+        {
+            "answer": "func getMeasurement(handler: Double -> Void) {\n\tlet measurement = 32.2\n\thandler(measurement)\n}\ngetMeasurement { (measurement: Double) in\n\tprint(\"It measures \\(measurement).\")\n}",
+            "reason": "The <code>getMeasurement()<\/code> function accepts a closure, but the closure's parameter is not placed inside parentheses."
+        },
+        {
+            "answer": "func createInterface(positioning: ([String]) -> Void) {\n\tprint(\"Creating some buttons\")\n\tlet buttons = [\"Button 1\" \"Button 2\" \"Button 3\"]\n\tpositioning(buttons)\n}\ncreateInterface { (buttons: [String]) in\n\tfor button in buttons {\n\t\tprint(\"I'll place \\(button) here...\")\n\t}\n}",
+            "reason": "The <code>buttons<\/code> array does not have commas after each item."
+        },
+        {
+            "answer": "func processPrimes(using closure: (Int) -> Void) {\n\tlet primes = [2, 3, 5, 7, 11, 13, 17, 19]\n\tfor prime in primes {\n\t\tclosure(prime)\n\t}\n}\nprocessPrimes { (prime: Int) \n\tprint(\"\\(prime) is a prime number.\")\n\tlet square = prime * prime\n\tprint(\"\\(prime) squared is \\(square)\")\n}",
+            "reason": "The <code>processPrimes<\/code> closure is missing the <code>in<\/code> keyword after its parameter list."
+        },
+        {
+            "answer": "func makePizza(addToppings: (Int)) {\n\tprint(\"The dough is ready.\")\n\tprint(\"The base is flat.\")\n\taddToppings(3)\n}\nmakePizza { (toppingCount: Int) in\n\tlet toppings = [\"ham\", \"salami\", \"onions\", \"peppers\"]\n\tfor i in 0..<toppingCount {\n\t\tlet topping = toppings[i]\n\t\tprint(\"I'm adding \\(topping)\")\n\t}\n}",
+            "reason": "The <code>addToppings<\/code> parameter is specified as a single-item tuple rather than a closure."
+        },
+        {
+            "answer": "func login(then action: (String) -> Void) {\n\tprint(\"Authenticating...\")\n\tlet username = \"twostraws\"\n\taction(username)\n}\nlogin {\n\tprint(\"Welcome, \\(username)!\")\n}",
+            "reason": "This calls the <code>login<\/code> closure but does not accept a parameter."
+        }
+    ]
+}

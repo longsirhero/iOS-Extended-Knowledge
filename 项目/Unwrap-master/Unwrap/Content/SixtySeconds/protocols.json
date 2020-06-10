@@ -1,0 +1,60 @@
+{
+    "title": "Protocols",
+    "postscript": "You can use <code>{ get set }<\/code> in your protocols to make read-write variables, or just <code>{ get }<\/code> to make read-only variables. Using just <code>{ set }<\/code> is not allowed.",
+    "reviewType": "singleSelection",
+    "question": "This is a valid protocol \u2013 true or false?",
+    "hint": "Protocols can declare properties as read-only, but not write-only.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "protocol Purchaseable {\n\tvar price: Double { get set }\n\tvar currency: String { get set }\n}",
+            "reason": "This is a valid protocol."
+        },
+        {
+            "answer": "protocol Learnable {\n\tvar difficulty: Int { get }\n}",
+            "reason": "This is a valid protocol."
+        },
+        {
+            "answer": "protocol Climbable {\n\tvar height: Double { get }\n\tvar gradient: Int { get }\n}",
+            "reason": "This is a valid protocol."
+        },
+        {
+            "answer": "protocol Washable {\n\tvar dirtinessLevel: Int { get set }\n}",
+            "reason": "This is a valid protocol."
+        },
+        {
+            "answer": "protocol Plantable {\n\tvar requirements: [String] { get set }\n}",
+            "reason": "This is a valid protocol."
+        },
+        {
+            "answer": "protocol Singable {\n\tvar lyrics: [String] { get set }\n\tvar notes: [String] { get set }\n}",
+            "reason": "This is a valid protocol."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "struct Knittable {\n\tvar needleSizes: [Double] { get set }\n}",
+            "reason": "This is a struct, not a protocol."
+        },
+        {
+            "answer": "protocol Strokeable {\n\tfluffiness: Int { get }\n}",
+            "reason": "<code>fluffiness<\/code> should be declared using <code>var<\/code>."
+        },
+        {
+            "answer": "protocol Buildable {\n\tvar numberOfBricks: Int { set }\n\tvar materials: [String] { set }\n}",
+            "reason": "It's not possible to create set-only properties in Swift."
+        },
+        {
+            "answer": "protocol Swimmable {\n\tvar depth { get }\n}",
+            "reason": "This needs a type annotation for <code>depth<\/code>."
+        },
+        {
+            "answer": "protocol Liftable {\n\tvar weight: Double get set\n}",
+            "reason": "This is missing braces around <code>get set<\/code>."
+        },
+        {
+            "answer": "protocol Mailable {\n\tvar width: Double { get, set }\n\tvar height: Double { get, set }\n}",
+            "reason": "<code>{ get set }<\/code> should not have a comma inside."
+        }
+    ]
+}

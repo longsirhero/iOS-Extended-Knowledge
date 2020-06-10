@@ -1,0 +1,60 @@
+{
+    "title": "Looping: Summary",
+    "postscript": "",
+    "reviewType": "singleSelection",
+    "question": "This code is valid Swift \u2013 true or false?",
+    "hint": "Infinite loops are commonly made using <code>while true<\/code> but other conditions can also work.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "for name in [\"Taylor\"] {\n\tprint(\"Welcome, \\(name)!\")\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "for i in 1...10 {\n\tcontinue\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "outer: for i in 1...10 {\n\tfor j in 1...10 {\n\t\tlet product = i * j\n\t\tprint(\"Product is \\(product)\")\n\t\tbreak outer\n\t}\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "while true {\n\tprint(\"The rain in Spain falls mainly on the plain\")\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "var hour = 9\nrepeat {\n\tprint(\"We're open for business.\")\n\thour += 1\n} while hour < 17\nprint(\"Time to go home!\")",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "for _ in 1...3 {\n\tprint(\"Happy birthday to you\")\n}\nprint(\"Happy birthday dear Taylor\")\nprint(\"Happy birthday to you\")",
+            "reason": "This code is valid Swift."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "for in 1...3 {\n\tprint(\"There's no place like home\")\n}",
+            "reason": "This is missing a name between <code>for<\/code> and <code>in<\/code>"
+        },
+        {
+            "answer": "for number in (2, 3, 5) {\n\tprint(\"\\(number) is a prime number.\")\n}",
+            "reason": "This attempts to loop over a tuple."
+        },
+        {
+            "answer": "outer: for i in 1...10 {\n\tfor i in 1...10 {\n\t\tlet product = i * j\n\t\tprint(\"Product is \\(product)\")\n\t\tbreak outer\n\t}\n}",
+            "reason": "<code>j<\/code> is not defined; <code>i<\/code> is used twice."
+        },
+        {
+            "answer": "var booksToRead = 0\nwhile booksToRead {\n\tprint(\"You still have books to read!\")\n}",
+            "reason": "<code>while booksToRead<\/code> is an invalid condition; it should probably be <code>while booksToRead > 0<\/code>."
+        },
+        {
+            "answer": "var username = \"twostraws\"\nrepeat {\n\tprint(\"Your username is \\(username)\")\n} while username",
+            "reason": "<code>while username<\/code> is an invalid condition."
+        },
+        {
+            "answer": "var population = 7_500_000_000\nrepeat {\n\tprint(\"More babies have been born.\")\n\tpopulation *= 1.0001\n} while true",
+            "reason": "This attempts to multiply an <code>Int<\/code> by a <code>Double<\/code>."
+        }
+    ]
+}

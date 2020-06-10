@@ -1,0 +1,60 @@
+{
+    "title": "Creating basic closures",
+    "postscript": "",
+    "reviewType": "singleSelection",
+    "question": "This code is valid Swift \u2013 true or false?",
+    "hint": "Closures don't take parameters in parentheses, and they are case-sensitive just like regular functions.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "let greetUser = {\n\tprint(\"Hi there!\")\n}\ngreetUser()",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "let walkDog = {\n\tprint(\"Let's go to the park\")\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "let learnSwift = {\n\tprint(\"Closures are like functions\")\n}\nlearnSwift()",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "var takeMedicine = {\n\tprint(\"I feel a little better\")\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "var castVote = {\n\tprint(\"I voted!\")\n}\ncastVote()",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "var connectVPN = {\n\tprint(\"Connected!\")\n}\nconnectVPN()",
+            "reason": "This code is valid Swift."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "let upgrade() = {\n\tprint(\"Upgrading...\")\n}\nupgrade()",
+            "reason": "The parentheses after <code>upgrade<\/code> should not be there.."
+        },
+        {
+            "answer": "let sing {\n\tprint(\"Tralala\")\n}\nsing()",
+            "reason": "There should be an equals sign before the opening brace."
+        },
+        {
+            "answer": "takeCruise = {\n\tprint(\"A week of vacation!\")\n}",
+            "reason": "This needs either <code>let<\/code> or <code>var<\/code> before <code>takeCruise<\/code>."
+        },
+        {
+            "answer": "var meetFriends = {\n\tprint(\"Let's watch a movie\")\n}\nmeetfriends()",
+            "reason": "Closure names are case-sensitive, and this attempts to call <code>meetfriends()<\/code> rather than <code>meetFriends()<\/code>."
+        },
+        {
+            "answer": "var paintPicture() {\n\tprint(\"Where are my watercolors?\")\n}",
+            "reason": "This should read <code>var paintPicture = {<\/code>."
+        },
+        {
+            "answer": "var signAutograph(to name: String) = {\n\tprint(\"To \\(name), my #1 fan\")\n}\nsignAutograph(to: \"Lisa\")",
+            "reason": "Unlike functions, closures put their parameters inside the opening brace."
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "title": "Omitting parameter labels",
+    "postscript": "",
+    "reviewType": "singleSelection",
+    "question": "This code is valid Swift \u2013 true or false?",
+    "hint": "Function and parameter names are case-sensitive.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "func bounceOnTrampoline(times: Int) {\n\tfor _ in 1...times {\n\t\tprint(\"Boing!\")\n\t}\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func evaluateJavaScript(_ input: String) {\n\tprint(\"Yup, that's JavaScript alright.\")\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func sumItems(_ items: [Int]) -> Int {\n\tvar total = 0\n\tfor item in items {\n\t\ttotal += item\n\t}\n\treturn total\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func greet(_ name: String) {\n\tprint(\"Hi, \\(name)!\")\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func climbMountain(_ name: String) {\n\tprint(\"I'm going to climb \\(name).\")\n}\nclimbMountain(\"Everest\")",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "func square(_ number: Int) -> Int {\n\treturn number * number\n}",
+            "reason": "This code is valid Swift."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "func makeBurger(withCheese: Bool) {\n\tif cheese {\n\t\tprint(\"Here's a cheeseburger\")\n\t} else {\n\t\tprint(\"Here's a regular burger\")\n\t}\n}",
+            "reason": "The <code>makeBurger()<\/code> function says that its parameter is called <code>withCheese<\/code>, but it's used as <code>cheese<\/code>."
+        },
+        {
+            "answer": "func countPoodles(dogs: [String]) -> Int {\n\tvar sum = 0\n\tfor dog in dogs {\n\t\tif dog == \"Poodle\" {\n\t\t\tsum += 1\n\t\t}\n\t}\n\treturn sum\n}\ncountPoodles([\"Mollie\", \"Penny\", \"Poppy\"])",
+            "reason": "This code calls <code>countPoodles()<\/code> without using its <code>dogs<\/code> parameter name."
+        },
+        {
+            "answer": "func addStudentToClass(_ name: String) {\n\tprint(\"Welcome to the class, \\(student)!\")\n}",
+            "reason": "The <code>addStudentToClass()<\/code> function says that its parameter is called <code>name<\/code>, but it's used as <code>student<\/code>."
+        },
+        {
+            "answer": "func isEveryoneCanadian(_ birthCountries: [String]) {\n\tfor country in birthCountries {\n\t\tif country != \"Canada\" {\n\t\t\treturn false\n\t\t}\n\t}\n\treturn true\n}",
+            "reason": "This code attempts to return a value from a function that doesn't return anything."
+        },
+        {
+            "answer": "func printLogMessage(message: String) -> Bool {\n\tprint(\"Log: \\(message)\")\n\treturn true\n}\nprintLogMessage(\"Something went wrong!\")",
+            "reason": "This code calls <code>printLogMessage()<\/code> without using its <code>message<\/code> parameter name."
+        },
+        {
+            "answer": "func formatLength(length length: Int) {\n\tprint(\"That measures \\(length)cm.\")\n}\nformatLength(95)",
+            "reason": "This code calls <code>formatLength()<\/code> without using its <code>length<\/code> parameter name."
+        }
+    ]
+}

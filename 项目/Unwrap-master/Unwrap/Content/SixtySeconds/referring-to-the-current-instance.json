@@ -1,0 +1,60 @@
+{
+    "title": "Referring to the current instance",
+    "postscript": "",
+    "reviewType": "singleSelection",
+    "question": "This code is valid Swift \u2013 true or false?",
+    "hint": "If you need to refer to a local property to distinguish it from a method parameter, use <code>self.propertyName<\/code>.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "struct District {\n\tvar number: Int\n\tvar supervisor: String\n\tinit(number: Int, supervisor: String) {\n\t\tself.number = number\n\t\tself.supervisor = supervisor\n\t}\n}\nlet district = District(number: 9, supervisor: \"Unknown\")",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct Cottage {\n\tvar rooms: Int\n\tvar rating = 5\n\tinit(rooms: Int) {\n\t\tself.rooms = rooms\n\t}\n}\nlet bailbrookHouse = Cottage(rooms: 4)",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct Character {\n\tvar name: String\n\tvar actor: String\n\tvar probablyGoingToDie: Bool\n\tinit(name: String, actor: String) {\n\t\tself.name = name\n\t\tself.actor = actor\n\t\tif self.actor == \"Sean Bean\" {\n\t\t\tprobablyGoingToDie = true\n\t\t} else {\n\t\t\tprobablyGoingToDie = false\n\t\t}\n\t}\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct Kitchen {\n\tvar utensils: [String]\n\tinit(utensils: [String]) {\n\t\tself.utensils = utensils\n\t}\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct Conference {\n\tvar name: String\n\tvar location: String\n\tinit(name: String, location: String) {\n\t\tself.name = name\n\t\tself.location = location\n\t}\n}\nlet wwdc = Conference(name: \"WWDC\", location: \"San Jose\")",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct SuperHero {\n\tvar nickname: String\n\tvar powers: [String]\n\tinit(nickname: String, superPowers: [String]) {\n\t\tself.nickname = nickname\n\t\tself.powers = superPowers\n\t}\n}\nlet batman = SuperHero(nickname: \"The Caped Crusader\", superPowers: [\"He's really rich\"])",
+            "reason": "This code is valid Swift."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "struct Cat {\n\tvar name: String\n\tvar breed: String\n\tvar meowVolume: Int\n\tinit(name: String, breed: String) {\n\t\tself.name = name\n\t\tself.breed = breed\n\t}\n}\nlet toby = Cat(name: \"Toby\", breed: \"Burmese\")",
+            "reason": "Initializers cannot finish until all properties have a value, and in this case <code>meowVolume<\/code> has not been set."
+        },
+        {
+            "answer": "struct Parent {\n\tvar numberOfKids: Int\n\tvar tirednessPercent: Int\n\tinit (kids: Int) {\n\t\tself.numberOfKids = kids\n\t}\n}\nlet james = Parent(kids: 2)",
+            "reason": "Initializers cannot finish until all properties have a value, and in this case <code>tirednessPercent<\/code> has not been set."
+        },
+        {
+            "answer": "struct Computer {\n\tvar cpus: Int\n\tvar ramGB: Int\n\tinit(cpus: Int, ram: Int) {\n\t\tself.cpus = cpus\n\t\tself.ram = ram\n\t}\n}",
+            "reason": "This attempts to set a property called <code>ram<\/code>, but the property is in fact called <code>ramGB<\/code>."
+        },
+        {
+            "answer": "struct Language {\n\tvar nameEnglish: String\n\tvar nameLocal: String\n\tvar speakerCount: Int\n\tinit(english: String, local: String, speakerCount: Int) {\n\t\tself.nameEnglish = english\n\t\tself.nameLocal = local\n\t\tself.speakerCount = speakerCount\n\t}\n}\nlet french = Language(nameEnglish: \"French\", nameLocal: \"fran\u00e7ais\", speakerCount: 220_000_000)",
+            "reason": "The initializer has the parameter names <code>english<\/code> and <code>local<\/code>, not <code>nameEnglish<\/code> and <code>nameLocal<\/code>."
+        },
+        {
+            "answer": "struct Bus {\n\tvar routeNumber: String\n\tinit(route: Int) {\n\t\tself.routeNumber = route\n\t}\n}",
+            "reason": "This attempts to assign an integer to a string property."
+        },
+        {
+            "answer": "struct Framework {\n\tvar name: String\n\tvar language: String\n\tfunc init(name: String, language: String) {\n\t\tself.name = name\n\t\tself.language = language\n\t}\n}\nlet vapor = Framework(name: \"Vapor\", language: \"Swift\")",
+            "reason": "Initializers must not have <code>func<\/code> written before them."
+        }
+    ]
+}

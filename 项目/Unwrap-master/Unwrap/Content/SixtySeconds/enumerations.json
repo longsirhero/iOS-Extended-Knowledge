@@ -1,0 +1,60 @@
+{
+    "title": "Enumerations",
+    "postscript": "",
+    "reviewType": "multipleSelection",
+    "question": "Which of these are best stored as enums?",
+    "hint": "Enums let you define fixed groups of items so you don't risk typos while using them.",
+    "syntaxHighlighting": false,
+    "correct": [
+        {
+            "answer": "Days of the week.",
+            "reason": "There are only seven days in the week, so they make a great choice for enums."
+        },
+        {
+            "answer": "Months of the year.",
+            "reason": "There are only 12 months in the year, so they make a great choice for enums."
+        },
+        {
+            "answer": "Error types.",
+            "reason": "There are only a fixed number of errors you can issue, so they make a great choice for enums."
+        },
+        {
+            "answer": "Directions (north, south, etc).",
+            "reason": "There are only so many named directions, so they make a great choice for enums."
+        },
+        {
+            "answer": "Suits in a deck of cards.",
+            "reason": "There are only four suits in a deck of cards, so they make a great choice for enums."
+        },
+        {
+            "answer": "Genres of movies.",
+            "reason": "There is a fixed number of movie genres, so they make a great choice for enums."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "Usernames.",
+            "reason": "These are best stored as strings."
+        },
+        {
+            "answer": "Passwords.",
+            "reason": "These are best stored as encrypted strings."
+        },
+        {
+            "answer": "A list of cities you have visited.",
+            "reason": "This is best stored as an array of strings."
+        },
+        {
+            "answer": "Heights of objects.",
+            "reason": "These are best stored as doubles."
+        },
+        {
+            "answer": "Average student exam scores.",
+            "reason": "These are best stored as doubles."
+        },
+        {
+            "answer": "An email address.",
+            "reason": "These are best stored as strings."
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "title": "Creating your own structs",
+    "postscript": "In Swift we write the names of types such as Int, String, and MyStruct with a capitalized first letter, and the names of variables and constants with a lowercase first letter.",
+    "reviewType": "singleSelection",
+    "question": "This code is valid Swift \u2013 true or false?",
+    "hint": "When you create an instance of a struct, Swift will ask you to provide values for all its properties. These parameters must have the same names as the properties themselves, and must be in the same order they were defined.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "struct User {\n\tvar name = \"Anonymous\"\n\tvar age: Int\n}\nlet twostraws = User(name: \"Paul\", age: 38)",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct Player {\n\tvar name: String\n\tvar position: String\n}\nlet harry = Player(name: \"Harry Kane\", position: \"Forward\")",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct ChessPiece {\n\tvar name: String\n\tvar value: Int\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct Phone {\n\tvar manufacturer: String\n\tvar screenSize: Double\n}",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct WeatherForecast {\n\tvar dayNumber: Int\n\tvar temperature: Int\n}\nlet monday = WeatherForecast(dayNumber: 1, temperature: 25)",
+            "reason": "This code is valid Swift."
+        },
+        {
+            "answer": "struct Book {\n\tvar title: String\n\tvar author = \"Unknown\"\n\tvar pageCount = 0\n}",
+            "reason": "This code is valid Swift."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "struct Order {\n\tvar customerID: Int\n\tvar itemID: Int\n}\nlet order = Order(customer: 143, item: 556)",
+            "reason": "The first property is named <code>customerID<\/code> rather than <code>customer<\/code>, and the second property is named <code>itemID<\/code>, not <code>item<\/code>."
+        },
+        {
+            "answer": "struct LeviJeans {\n\tvar fitNumber: Int\n\tvar waist: Int\n\tvar leg: Int\n}\nlet jeans = LeviJeans(fitNumber: \"501\", waist: \"34\", leg: \"32\")",
+            "reason": "This attempts to assign strings to integers."
+        },
+        {
+            "answer": "struct Cup {\n\tvar size: Int\n\tvar color = White\n}",
+            "reason": "<code>White<\/code> doesn't have any meaning; strings should be enclosed in quote marks."
+        },
+        {
+            "answer": "struct RubiksCube {\n\tvar size = 3\n}\nlet large = RubiksCube(5)",
+            "reason": "This is missing the <code>size<\/code> parameter label."
+        },
+        {
+            "answer": "struct Dog (\n\tvar name: String\n\tvar breed: String\n)",
+            "reason": "This uses parentheses rather than braces."
+        },
+        {
+            "answer": "struct Boat {\n\tname: String\n\thomePort: String\n\tmaxSpeed: Int\n}",
+            "reason": "This is missing the <code>var<\/code> keyword."
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "title": "Nil coalescing",
+    "postscript": "",
+    "reviewType": "singleSelection",
+    "question": "This code demonstrates using nil coalescing with optionals \u2013 true or false?",
+    "hint": "The data type on the left of <code>??<\/code> must be the same as the data type on the right.",
+    "syntaxHighlighting": true,
+    "correct": [
+        {
+            "answer": "var captain: String? = \"Kathryn Janeway\"\nlet name = captain ?? \"Anonymous\"",
+            "reason": "This code demonstrates nil coalescing with optionals."
+        },
+        {
+            "answer": "let lightsaberColor: String? = \"green\"\nlet color = lightsaberColor ?? \"blue\"",
+            "reason": "This code demonstrates nil coalescing with optionals."
+        },
+        {
+            "answer": "let planetNumber: Int? = 426\nvar destination = planetNumber ?? 3",
+            "reason": "This code demonstrates nil coalescing with optionals."
+        },
+        {
+            "answer": "var selectedYear: Int? = nil\nlet actualYear = selectedYear ?? 1989",
+            "reason": "This code demonstrates nil coalescing with optionals."
+        },
+        {
+            "answer": "var userOptedIn: Bool? = nil\nvar optedIn = userOptedIn ?? false",
+            "reason": "This code demonstrates nil coalescing with optionals."
+        },
+        {
+            "answer": "let distanceRan: Double? = 0.5\nlet distance: Double = distanceRan ?? 0",
+            "reason": "This code demonstrates nil coalescing with optionals."
+        }
+    ],
+    "wrong": [
+        {
+            "answer": "let jeansNumber: Int? = nil\nlet jeans = jeansNumber ? 501",
+            "reason": "Nil coalescing uses two question marks, not one."
+        },
+        {
+            "answer": "let userID: Int? = 556\nlet id = userID ?? \"Unknown\"",
+            "reason": "This attempts to use nil coalescing across different types, which isn't allowed."
+        },
+        {
+            "answer": "let painter: String = \"Leonardo da Vinci\"\nvar artist: String = painter ?? \"Unknown\"",
+            "reason": "This uses nil coalescing without an optional."
+        },
+        {
+            "answer": "let numberSum: Double? = 0.0\nlet sum: Double = numberSum ??",
+            "reason": "This is missing the right-hand side of the nil coalescing operator."
+        },
+        {
+            "answer": "var conferenceName: String? = \"WWDC\"\nvar conference: String = conferenceName ?? nil",
+            "reason": "This code could result in trying to assign <code>nil<\/code> to <code>conference<\/code>, which is not allowed."
+        },
+        {
+            "answer": "var bestPony: String? = \"Pinkie Pie\"\nlet selectedPony: String? == bestPony ?? nil",
+            "reason": "This code uses <code>==<\/code> rather than <code>=<\/code>."
+        }
+    ]
+}
